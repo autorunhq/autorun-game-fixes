@@ -1,0 +1,18 @@
+# Halo: Combat Evolved, from Autorun's game fixes. Halo walks with w, a, s and
+# d and works its menus with the arrows, so the left stick takes one set and
+# the d-pad the other. Applied over keys.txt; change any line here.
+LUP=0x57
+LDOWN=0x53
+LLEFT=0x41
+LRIGHT=0x44
+UP=0x26
+DOWN=0x28
+LEFT=0x25
+RIGHT=0x27
+X=0x0d
+Y=0x20
+L=0x45
+R=0x52
+ZL=0x11
+ZR=0x09
+MINUS=0x1b

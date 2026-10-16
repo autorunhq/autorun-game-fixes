@@ -1,0 +1,8 @@
+{
+  "title": "Guitar Hero III",
+  "version": 1,
+  "required": true,
+  "summary": "Writes the registry key Aspyr's installer writes, without which the game stops at startup; sets its screen to 1280x720 with the crowd and the other CPU-heavy details off; and writes a dxvk.conf that keeps textures out of file mappings. For another language, put en, fr, it, de, es or ko in language.txt in the game's folder.",
+  "match": { "exe": ["GH3.exe"], "files": ["AWL.dll"] },
+  "run": { "source": "gh3_setup.c", "exe": "gh3-setup.exe", "libs": ["-lshell32", "-ladvapi32"] }
+}

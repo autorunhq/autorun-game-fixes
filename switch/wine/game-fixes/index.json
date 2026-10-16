@@ -1,0 +1,139 @@
+{
+ "schema": 1,
+ "serial": 1,
+ "fixes": [
+  {
+   "id": "falloutnv",
+   "title": "Fallout: New Vegas",
+   "version": 1,
+   "required": true,
+   "summary": "Without settings of its own the game hands itself to FalloutNVLauncher.exe and closes. This adds the FalloutPrefs.ini that launcher would write, naming the Switch's GPU as DXVK reports it, at 1280x720. A FalloutPrefs.ini the game already has is kept.",
+   "match": {
+    "exe": [
+     "FalloutNV.exe"
+    ],
+    "files": [
+     "Data/FalloutNV.esm"
+    ]
+   },
+   "files": [
+    {
+     "name": "FalloutPrefs.ini",
+     "size": 132,
+     "sha256": "baaafac0402d0a3a7a61b5685f5968e7415ea5ebc2e2fe1625d4fbad6254d096"
+    }
+   ],
+   "install": [
+    {
+     "file": "FalloutPrefs.ini",
+     "to": "{drive_c}/users/steamuser/Documents/My Games/FalloutNV/FalloutPrefs.ini",
+     "keep": true
+    }
+   ]
+  },
+  {
+   "id": "gh3",
+   "title": "Guitar Hero III",
+   "version": 1,
+   "required": true,
+   "summary": "Writes the registry key Aspyr's installer writes, without which the game stops at startup; sets its screen to 1280x720 with the crowd and the other CPU-heavy details off; and writes a dxvk.conf that keeps textures out of file mappings. For another language, put en, fr, it, de, es or ko in language.txt in the game's folder.",
+   "match": {
+    "exe": [
+     "GH3.exe"
+    ],
+    "files": [
+     "AWL.dll"
+    ]
+   },
+   "run": "gh3-setup.exe",
+   "files": [
+    {
+     "name": "gh3-setup.exe",
+     "size": 10240,
+     "sha256": "de5a46c8bdfbb4e00d7be7fdc07bd2e338bc72a85939a036cce307a457b5d92f"
+    }
+   ]
+  },
+  {
+   "id": "halo",
+   "title": "Halo: Combat Evolved",
+   "version": 1,
+   "required": false,
+   "summary": "Controls for Halo: the left stick walks with w, a, s and d and the d-pad works the menus with the arrows; X chooses, Y jumps, L is the action key, R reloads, ZL crouches and ZR shows the scores. Kept if the game already has its own controls file.",
+   "match": {
+    "exe": [
+     "halo.exe"
+    ],
+    "files": [
+     "Controls"
+    ]
+   },
+   "files": [
+    {
+     "name": "HALO.keys.txt",
+     "size": 361,
+     "sha256": "1122e393433e34cfefbbed921485c75907c4f96b4a4a6ade76dd8172fd167a2c"
+    }
+   ],
+   "install": [
+    {
+     "file": "HALO.keys.txt",
+     "to": "{game}/{stem}.keys.txt",
+     "keep": true
+    }
+   ]
+  },
+  {
+   "id": "sims2",
+   "title": "The Sims 2 Ultimate Collection",
+   "version": 1,
+   "required": true,
+   "summary": "Writes what the release's \"Instalar Registros\" batch file writes, with the card's paths: where each pack is, the language, and the keys the retail executables read. Copies a dxvk.conf that holds the game to 512 MB of video memory, and sets Graphics Rules.sgr for the 1280x720 screen. For another language, put its number in language.txt beside the packs.",
+   "match": {
+    "exe": [
+     "Sims2EP9.exe"
+    ],
+    "files": [
+     "../TSData"
+    ]
+   },
+   "run": "sims2-setup.exe",
+   "files": [
+    {
+     "name": "sims2-setup.exe",
+     "size": 16896,
+     "sha256": "0d3bdcd823e5331fd424b181d7c0b20aa32ea5db8286aea084d6854e48a34955"
+    },
+    {
+     "name": "dxvk.conf",
+     "size": 317,
+     "sha256": "6cbede5202596e82ce38f9295481b875c4bb10cd56594d579a6bf277830d0fd2"
+    }
+   ]
+  },
+  {
+   "id": "war3",
+   "title": "WarCraft III",
+   "version": 1,
+   "required": true,
+   "summary": "Sets the game's video to the Switch's 1280x720 screen, so the pointer and the touchscreen line up; draws with the game's own OpenGL renderer, which takes half the CPU its Direct3D does; and offers only the 1280x720 mode, so the movies fill the width. Start the game through a 36-bit or 39-bit forwarder.",
+   "match": {
+    "exe": [
+     "war3.exe",
+     "Frozen Throne.exe"
+    ],
+    "files": [
+     "Game.dll"
+    ]
+   },
+   "run": "war3-setup.exe",
+   "files": [
+    {
+     "name": "war3-setup.exe",
+     "size": 5632,
+     "sha256": "978bbed33771c09062d3d2f8d1417e2a2de1cab530d13258970263aed9176104"
+    }
+   ]
+  }
+ ]
+}

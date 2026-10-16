@@ -1,0 +1,10 @@
+{
+  "title": "Fallout: New Vegas",
+  "version": 1,
+  "required": true,
+  "summary": "Without settings of its own the game hands itself to FalloutNVLauncher.exe and closes. This adds the FalloutPrefs.ini that launcher would write, naming the Switch's GPU as DXVK reports it, at 1280x720. A FalloutPrefs.ini the game already has is kept.",
+  "match": { "exe": ["FalloutNV.exe"], "files": ["Data/FalloutNV.esm"] },
+  "install": [
+    { "file": "FalloutPrefs.ini", "to": "{drive_c}/users/steamuser/Documents/My Games/FalloutNV/FalloutPrefs.ini", "keep": true }
+  ]
+}

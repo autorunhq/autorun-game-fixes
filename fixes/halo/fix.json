@@ -1,0 +1,10 @@
+{
+  "title": "Halo: Combat Evolved",
+  "version": 1,
+  "required": false,
+  "summary": "Controls for Halo: the left stick walks with w, a, s and d and the d-pad works the menus with the arrows; X chooses, Y jumps, L is the action key, R reloads, ZL crouches and ZR shows the scores. Kept if the game already has its own controls file.",
+  "match": { "exe": ["halo.exe"], "files": ["Controls"] },
+  "install": [
+    { "file": "HALO.keys.txt", "to": "{game}/{stem}.keys.txt", "keep": true }
+  ]
+}

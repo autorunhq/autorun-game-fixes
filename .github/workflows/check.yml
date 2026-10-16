@@ -1,0 +1,9 @@
+name: check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tests/check_index.py
+      - run: python3 tests/check_sims2_setup.py

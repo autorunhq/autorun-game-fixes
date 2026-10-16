@@ -1,0 +1,9 @@
+{
+  "title": "The Sims 2 Ultimate Collection",
+  "version": 1,
+  "required": true,
+  "summary": "Writes what the release's \"Instalar Registros\" batch file writes, with the card's paths: where each pack is, the language, and the keys the retail executables read. Copies a dxvk.conf that holds the game to 512 MB of video memory, and sets Graphics Rules.sgr for the 1280x720 screen. For another language, put its number in language.txt beside the packs.",
+  "match": { "exe": ["Sims2EP9.exe"], "files": ["../TSData"] },
+  "run": { "source": "sims2_setup.c", "exe": "sims2-setup.exe", "libs": ["-ladvapi32"] },
+  "data": ["dxvk.conf"]
+}
