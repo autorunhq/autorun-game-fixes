@@ -201,7 +201,7 @@ reaches a file an older one set.
 - 1 to 32 `rows`, each with `section`, `key` and `initial` (under 64 characters each).
 - UTF-16 files are refused by the engine. The engine also adds an `[Autorun]`
   section with `SettingsApplied=1` to the file.
-- **A game with a settings profile, built in or published, keeps it:** a fix's
+- **A game with a settings profile keeps it:** a fix's
   `game_settings` is skipped for that game, so one file never has two sources.
   For a game that needs a settings *screen*, write a profile instead.
 
@@ -237,10 +237,11 @@ that depend on what's on the card. See `fixes/gh3/gh3_setup.c` and
 
 ## Settings profiles: profiles/<id>.json
 
-A game's settings screen in the launcher (presets, choices, help) and the
-values written to its settings file before it starts. Unlike a fix, a profile
-is **not asked about**. A game Autorun has a profile **built in** for always
-uses the built-in one; published profiles serve every other game.
+A game's settings screen in the launcher (presets, choices, help), the values
+written to its settings file before it starts, and the arguments it starts
+with. Unlike a fix, a profile is **not asked about**. Autorun has no profiles
+of its own: every game's comes from here, through the card's index, so a
+broken profile breaks that game for every player. Test it.
 
 ```json
 {
@@ -272,17 +273,23 @@ uses the built-in one; published profiles serve every other game.
 - `choices`: up to 256, `{ "label", "value" }`; a `null` value is "game default".
 - `section` is required for INI and absent for XML.
 - `pending_resolution`: two keys set to 0 when the resolution changes (XML games).
-- `arguments`: appended to the game's command line when it starts.
+- `arguments`: one string appended to the game's command line when it starts.
+- `add_arguments`: up to 16 `{ "unless": "-key=", "add": "-key=value" }`, each
+  added unless the command line already has an argument beginning with
+  `unless` (ignoring case and quotes), all of them or none when they don't fit.
+  Use it for arguments a player may want to override.
+- **A profile of arguments alone** has no `path` and no `rows`: it adds
+  arguments and shows no settings screen, as `sottr` and the Kingdom Hearts
+  profiles do. A profile with a `path` needs `rows`, and the other way round.
 - `update`: the name of a compiled hook in Autorun's `game_settings.c`
   (`game_settings_update_hook`); today only `ff7remake`. A profile naming a
   hook the build lacks is left out.
 - Up to 62 rows; labels under 96 characters, help under 256.
 
-Built-in profiles are copied here by Autorun's
-`horizon-wine/tools/export-game-profiles.py`, and its
-`tests/game_profiles.c` proves every one comes back from JSON field for field.
-To retire a built-in profile: export, publish this repository, then remove it
-from `game_settings_builtin` in Autorun.
+Autorun's host tests run its settings engine, and the Kingdom Hearts and Tomb
+Raider arguments, against this checkout's profiles
+(`horizon-wine/tests/check-game-fixes.sh`): change a profile those tests
+cover, and run them.
 
 ## Recipes
 
@@ -295,7 +302,7 @@ from `game_settings_builtin` in Autorun.
 | Wine should offer only the screen's mode | `registry`: `HKCU\Software\Wine\AppDefaults\<game>.exe\X11 Driver`, `EmulateModelist` = `Y` (as `war3`) |
 | DXVK needs an option | `install` a `dxvk.conf` to `{game}/dxvk.conf` with `keep: true` |
 | Controls for a controller | `install` `{game}/{stem}.keys.txt` with `keep: true` (format: Autorun's `config/keys.txt`) |
-| Arguments the game always needs | `install` `{game}/{stem}.args.txt` with `keep: true`, or a profile's `arguments` |
+| Arguments the game always needs | a profile's `add_arguments` (each added unless the player gave one), or `arguments` |
 | Box64 options | `install` `{game}/{stem}.box64.txt` with `keep: true` |
 | Different renderer or translator | `settings`: `d3d`, `cpu`, `dxvk-source` |
 | Slow loading from huge data files | `settings`: `"lazy-file-views": "1"` |
@@ -307,7 +314,8 @@ from `game_settings_builtin` in Autorun.
   Fallout's launcher) are compiled into the runtime and reviewed with it.
   Propose one to Autorun instead.
 - **Set environment variables** or Wine's own runtime switches, other than
-  through `settings`.
+  through `settings`. Left 4 Dead's Steam variables are compiled in Autorun
+  for that reason.
 - **Run code outside Wine**, or on the card before the launcher.
 - **Change Autorun's behaviour for every game.** A fix applies to the games
   it matches.

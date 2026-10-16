@@ -1,0 +1,47 @@
+{
+ "version": 1,
+ "match": {
+  "exe": [
+   "KINGDOM HEARTS III.exe"
+  ]
+ },
+ "machine": "x64",
+ "add_arguments": [
+  {
+   "unless": "-AUTH_LOGIN=",
+   "add": "-AUTH_LOGIN=unused"
+  },
+  {
+   "unless": "-AUTH_PASSWORD=",
+   "add": "-AUTH_PASSWORD=unused"
+  },
+  {
+   "unless": "-AUTH_TYPE=",
+   "add": "-AUTH_TYPE=exchangecode"
+  },
+  {
+   "unless": "-epicapp=",
+   "add": "-epicapp=fd711544a06543e0ab1b0808de334120"
+  },
+  {
+   "unless": "-epicenv=",
+   "add": "-epicenv=Prod"
+  },
+  {
+   "unless": "-EpicPortal",
+   "add": "-EpicPortal"
+  },
+  {
+   "unless": "-epicusername=",
+   "add": "-epicusername=Player"
+  },
+  {
+   "unless": "-epicuserid=",
+   "add": "-epicuserid=1638"
+  },
+  {
+   "unless": "-epiclocale=",
+   "add": "-epiclocale=en"
+  }
+ ]
+}

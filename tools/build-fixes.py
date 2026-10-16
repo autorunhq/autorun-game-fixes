@@ -61,11 +61,10 @@ before the game starts: Autorun's game settings engine's profile as JSON --
 match and machine ("x86" or "x64"), path under {drive_c}/, format, presets,
 rows of section, key, label, type, presets, initial value, choices and help,
 and maybe initial_text, pending_resolution, arguments and an update hook by
-name. Unlike a fix it is not asked about. A game Autorun has a profile built
-in for keeps that one; the profiles here are for the rest, and are what a
-built-in profile becomes once it moves out of Autorun. Autorun's
-tools/export-game-profiles.py writes them from its built-in ones, and its
-tests/game_profiles.c checks a profile comes back from JSON unchanged.
+name. Unlike a fix it is not asked about. add_arguments is a list of
+{"unless": ..., "add": ...}: each argument added unless the command line has
+one beginning with unless. A profile with no path and no rows only adds
+arguments. Autorun has no profiles of its own: every game's is here.
 
 Everything is written to switch/wine/game-fixes/<id>/, and the index to
 switch/wine/game-fixes/index.json with each file's size and SHA-256. The
@@ -268,7 +267,7 @@ def read_profiles(old):
             fail(name, 'a profile file is named in lowercase letters, digits and dashes')
         spec = json.loads(path.read_text())
         known = {'version', 'match', 'machine', 'path', 'format', 'initial_text', 'presets',
-                 'pending_resolution', 'arguments', 'update', 'rows'}
+                 'pending_resolution', 'arguments', 'add_arguments', 'update', 'rows'}
         if set(spec) - known:
             fail(name, f'unknown keys {sorted(set(spec) - known)}')
         if not isinstance(spec.get('version'), int) or spec['version'] < 1:
@@ -277,12 +276,23 @@ def read_profiles(old):
             fail(name, 'match names the executable, by exe or version')
         if spec.get('machine') not in ('x86', 'x64') or spec.get('format', 'ini') not in ('ini', 'xml'):
             fail(name, 'machine is x86 or x64, format ini or xml')
-        where = spec.get('path', '')
-        if not where.startswith('{drive_c}/') or not relative_ok(where[10:], False) or len(where) >= 256:
-            fail(name, 'path is under {drive_c}/')
+        adds = spec.get('add_arguments', [])
+        if len(adds) > 16 or not all(set(a) == {'unless', 'add'} and all(
+                isinstance(a[k], str) and a[k].strip() and len(a[k]) < (128 if k == 'unless' else 256) for k in a)
+                for a in adds):
+            fail(name, 'add_arguments is up to 16 {"unless": ..., "add": ...}')
         rows = spec.get('rows', [])
-        if not 0 < len(rows) <= 62:
-            fail(name, 'a profile has 1 to 62 rows')
+        where = spec.get('path')
+        # A settings file with its settings, or launch arguments alone.
+        if where is None and not rows:
+            if not adds and not spec.get('arguments'):
+                fail(name, 'a profile has a settings file with rows, or arguments')
+        else:
+            if not isinstance(where, str) or not where.startswith('{drive_c}/') or \
+                    not relative_ok(where[10:], False) or len(where) >= 256:
+                fail(name, 'path is under {drive_c}/')
+            if not 0 < len(rows) <= 62:
+                fail(name, 'a profile with a settings file has 1 to 62 rows')
         types = {'number', 'integer', 'text', 'resolution', 'd3d_api'}
         for row in rows:
             if not row.get('key') or not row.get('label') or row.get('type', 'text') not in types or \

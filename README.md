@@ -27,18 +27,19 @@ the index, so it's always current.
 
 ## Settings profiles
 
-`profiles/<id>.json` holds the per-game settings screens Autorun shows: the
-game's own INI or XML file, with presets, choices and help text. Autorun
-writes the values before the game starts. Unlike a fix, a profile is not
-asked about.
+`profiles/<id>.json` is everything Autorun does for a game without asking,
+and the only place it's defined:
 
-A game Autorun has a profile built in for keeps its built-in one. The copies
-here are kept identical to the built-in ones by Autorun's
-`tools/export-game-profiles.py`, and its `tests/game_profiles.c` checks every
-one comes back from JSON unchanged. To move a game's profile out of Autorun:
-export, publish this repository, then remove it from Autorun's
-`game_settings_builtin`. A profile for a game Autorun has none for works as
-soon as it is published here.
+- the game's **settings screen** in Autorun, for its own INI or XML file, with
+  presets, choices and help text, and the values written before it starts;
+- the **arguments** it is started with, each added unless the player already
+  gave one like it (Kingdom Hearts' Epic arguments, Shadow of the Tomb
+  Raider's `-nolauncher`).
+
+Autorun has no profiles of its own any more: every one is here, and a change
+published here reaches every card without an Autorun update. What can't be
+data (patches to a game's code as it loads, environment variables) stays
+compiled in Autorun.
 
 ## Layout
 
@@ -85,7 +86,7 @@ fix's files from beside it.
      is done this way.
    - `game_settings`: values in the game's own INI or XML settings file. The
      launcher writes them with Autorun's game settings engine. A game that
-     Autorun already has built-in settings for keeps those.
+     has a settings profile keeps its profile instead.
    - `install`, to put a file somewhere, and `settings`, for the game's
      launcher settings.
 

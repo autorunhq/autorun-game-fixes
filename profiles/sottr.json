@@ -1,0 +1,15 @@
+{
+ "version": 1,
+ "match": {
+  "exe": [
+   "SOTTR.exe"
+  ]
+ },
+ "machine": "x64",
+ "add_arguments": [
+  {
+   "unless": "-nolauncher",
+   "add": "-nolauncher"
+  }
+ ]
+}

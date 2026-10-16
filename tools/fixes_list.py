@@ -52,17 +52,22 @@ def render(index):
         '',
         f'## Settings profiles ({len(profiles)})',
         '',
-        "A game's settings screen in Autorun, written to the game's own settings file before it starts. "
-        'A game Autorun has a profile built in for uses its built-in one.',
+        "A game's settings screen in Autorun, written to the game's own settings file before it starts, "
+        'and the arguments the game is started with. Applied without asking.',
         '',
-        '| Game | Profile | Version | Machine | Settings file | Settings |',
-        '|---|---|---|---|---|---|',
+        '| Game | Profile | Version | Machine | Settings file | Settings | Launch arguments |',
+        '|---|---|---|---|---|---|---|',
     ]
     for profile in profiles:
-        exe = profile['match'].get('exe', [profile['id']])[0]
-        lines.append(f'| {cell(exe)} | [`{profile["id"]}`]({REPOSITORY}/profiles/{profile["id"]}.json) | '
-                     f'{profile["version"]} | {profile["machine"]} | `{cell(profile["path"].split("/")[-1])}` | '
-                     f'{len(profile["rows"])} |')
+        exes = ', '.join(cell(name) for name in profile['match'].get('exe', [profile['id']]))
+        where = f'`{cell(profile["path"].split("/")[-1])}`' if profile.get('path') else 'none'
+        arguments = [profile['arguments']] if profile.get('arguments') else []
+        arguments += [a['add'] for a in profile.get('add_arguments', [])]
+        shown = ', '.join(f'`{cell(a)}`' for a in arguments[:3]) + (f' and {len(arguments) - 3} more'
+                                                                   if len(arguments) > 3 else '')
+        lines.append(f'| {exes} | [`{profile["id"]}`]({REPOSITORY}/profiles/{profile["id"]}.json) | '
+                     f'{profile["version"]} | {profile["machine"]} | {where} | {len(profile.get("rows", []))} | '
+                     f'{shown or "none"} |')
     return '\n'.join(lines) + '\n'
 
 

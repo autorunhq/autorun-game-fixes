@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "serial": 4,
+ "serial": 5,
  "fixes": [
   {
    "id": "gh3",
@@ -3103,6 +3103,103 @@
    ]
   },
   {
+   "id": "kingdom-hearts-final-mix",
+   "version": 1,
+   "match": {
+    "exe": [
+     "KINGDOM HEARTS FINAL MIX.exe",
+     "KINGDOM HEARTS II FINAL MIX.exe"
+    ]
+   },
+   "machine": "x64",
+   "add_arguments": [
+    {
+     "unless": "-AUTH_LOGIN=",
+     "add": "-AUTH_LOGIN=unused"
+    },
+    {
+     "unless": "-AUTH_PASSWORD=",
+     "add": "-AUTH_PASSWORD=00000000000000000000000000000000"
+    },
+    {
+     "unless": "-AUTH_TYPE=",
+     "add": "-AUTH_TYPE=exchangecode"
+    },
+    {
+     "unless": "-epicapp=",
+     "add": "-epicapp=68c214c58f694ae88c2dab6f209b43e4"
+    },
+    {
+     "unless": "-epicenv=",
+     "add": "-epicenv=Prod"
+    },
+    {
+     "unless": "-EpicPortal",
+     "add": "-EpicPortal"
+    },
+    {
+     "unless": "-epicusername=",
+     "add": "-epicusername=Player"
+    },
+    {
+     "unless": "-epicuserid=",
+     "add": "-epicuserid=1638"
+    },
+    {
+     "unless": "-epiclocale=",
+     "add": "-epiclocale=en"
+    }
+   ]
+  },
+  {
+   "id": "kingdom-hearts-iii",
+   "version": 1,
+   "match": {
+    "exe": [
+     "KINGDOM HEARTS III.exe"
+    ]
+   },
+   "machine": "x64",
+   "add_arguments": [
+    {
+     "unless": "-AUTH_LOGIN=",
+     "add": "-AUTH_LOGIN=unused"
+    },
+    {
+     "unless": "-AUTH_PASSWORD=",
+     "add": "-AUTH_PASSWORD=unused"
+    },
+    {
+     "unless": "-AUTH_TYPE=",
+     "add": "-AUTH_TYPE=exchangecode"
+    },
+    {
+     "unless": "-epicapp=",
+     "add": "-epicapp=fd711544a06543e0ab1b0808de334120"
+    },
+    {
+     "unless": "-epicenv=",
+     "add": "-epicenv=Prod"
+    },
+    {
+     "unless": "-EpicPortal",
+     "add": "-EpicPortal"
+    },
+    {
+     "unless": "-epicusername=",
+     "add": "-epicusername=Player"
+    },
+    {
+     "unless": "-epicuserid=",
+     "add": "-epicuserid=1638"
+    },
+    {
+     "unless": "-epiclocale=",
+     "add": "-epiclocale=en"
+    }
+   ]
+  },
+  {
    "id": "moha",
    "version": 1,
    "match": {
@@ -3973,6 +4070,22 @@
        "value": "(MinLODSize=1,MaxLODSize=4096,LODBias=0)"
       }
      ]
+    }
+   ]
+  },
+  {
+   "id": "sottr",
+   "version": 1,
+   "match": {
+    "exe": [
+     "SOTTR.exe"
+    ]
+   },
+   "machine": "x64",
+   "add_arguments": [
+    {
+     "unless": "-nolauncher",
+     "add": "-nolauncher"
     }
    ]
   },
