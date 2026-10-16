@@ -7,9 +7,31 @@ what a fix cannot do. [README.md](README.md) is the short introduction;
 
 ## The rule before everything else
 
-A fix only **sets up a copy of the game the player already owns**. Never add a
-game's files, its executables, DLLs or data, a cracked or modified executable,
-or anything else the repository has no right to share. Codecs, runtimes and
+A fix only **sets up a legitimate copy of the game the player already owns**.
+Never add a game's files, its executables, DLLs or data, a crack, a no-CD
+patch, a modified executable, a stand-in for a store's client, or anything else
+the repository has no right to share, and never link to one. A fix never
+removes, skips or fakes copy protection, DRM, a license check or a sign-in the
+game actually checks.
+
+Why launchers come up at all: Autorun runs Wine as **one process**, one program
+at a time, because Horizon gives a homebrew app no way to start a second
+program beside itself, let alone leave one running.
+
+- A launcher that **starts the game and goes away** (hardware detection, a
+  settings dialog, a front end that passes arguments) can't run. A fix may do
+  its part: write the settings file it writes, pass the arguments it passes.
+- A launcher that **stays running beside the game** (a store's client the game
+  keeps asking about ownership) can't run either, and a fix doesn't replace
+  it. A fix for such a game sets up everything else an original copy needs:
+  the registry keys its installer writes, its settings, its paths on the card.
+  Whether the player gets it to start without its client is their own decision
+  and responsibility, outside this repository.
+
+Never write a fix for a **third-party bundle**: a download that ships a game
+already packed with Autorun as its environment. The project doesn't support or
+endorse them. Match the game as a player's own copy installs it, with Autorun
+from its releases, not a bundle's folders, settings or modified files. Codecs, runtimes and
 other third-party files are only shipped when their license allows it: a fix
 can register or point to a file the player supplies, as `sims2` does with the
 VP6 codec, instead of shipping it.
