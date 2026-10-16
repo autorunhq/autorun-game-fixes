@@ -1,0 +1,7 @@
+32	HKCU\Software\Blizzard Entertainment\Warcraft III\Video	reswidth	dword	1280
+32	HKCU\Software\Blizzard Entertainment\Warcraft III\Video	resheight	dword	720
+32	HKCU\Software\Blizzard Entertainment\Warcraft III\Video	colordepth	dword	32
+32	HKCU\Software\Blizzard Entertainment\Warcraft III\Video	refreshrate	dword	60
+32	HKCU\Software\Blizzard Entertainment\Warcraft III\Misc	seenintromovie	delete	
+32	HKCU\Software\Blizzard Entertainment\Warcraft III	Gfx OpenGL	dword	1
+32	HKCU\Software\Wine\AppDefaults\war3.exe\X11 Driver	EmulateModelist	sz	Y

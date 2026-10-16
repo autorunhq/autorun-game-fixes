@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "serial": 2,
+ "serial": 3,
  "fixes": [
   {
    "id": "gh3",
@@ -85,7 +85,7 @@
   {
    "id": "war3",
    "title": "WarCraft III",
-   "version": 1,
+   "version": 2,
    "required": true,
    "summary": "Sets the game's video to the Switch's 1280x720 screen, so the pointer and the touchscreen line up; draws with the game's own OpenGL renderer, which takes half the CPU its Direct3D does; and offers only the 1280x720 mode, so the movies fill the width. Start the game through a 36-bit or 39-bit forwarder.",
    "match": {
@@ -97,12 +97,17 @@
      "Game.dll"
     ]
    },
-   "run": "war3-setup.exe",
+   "run": "autorun-registry.exe",
    "files": [
     {
-     "name": "war3-setup.exe",
-     "size": 5632,
-     "sha256": "978bbed33771c09062d3d2f8d1417e2a2de1cab530d13258970263aed9176104"
+     "name": "autorun-registry.exe",
+     "size": 6656,
+     "sha256": "52487a5404c3f0d9e42ef4d31d5afec66a0bf4d459033ccde87cb495cd6ab377"
+    },
+    {
+     "name": "registry.txt",
+     "size": 545,
+     "sha256": "8c7f3835f233a60facc4b7f5e716e63d28dcbe2cbb058dbb8ae30f196b293093"
     }
    ]
   }

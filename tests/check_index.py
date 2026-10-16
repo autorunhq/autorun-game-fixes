@@ -28,6 +28,13 @@ for fix in index['fixes']:
     for item in fix.get('install', []):
         assert any(f['name'] == item['file'] for f in fix['files']), f'{fix["id"]}: installs a file it does not list'
 
+# registry.txt is what common/registry_setup.c reads: five fields by tabs.
+for path in out.glob('*/registry.txt'):
+    for line in path.read_text(encoding='utf-8').splitlines():
+        view, key, name, kind, value = line.split('\t')
+        assert view in ('32', '64') and key[:5] in ('HKCU\\', 'HKLM\\'), f'{path}: {line!r}'
+        assert kind in ('sz', 'dword', 'delete') and (kind != 'dword' or value.isdigit()), f'{path}: {line!r}'
+
 fixes = {p.name for p in (repo / 'fixes').iterdir() if (p / 'fix.json').is_file()}
 assert fixes == {f['id'] for f in index['fixes']}, f'fixes not in the index: {fixes ^ {f["id"] for f in index["fixes"]}}'
 stray = {p for p in out.rglob('*') if p.is_file() and p.name != 'index.json'} - listed

@@ -35,6 +35,7 @@ fixes/<id>/fix.json        what the fix is for and what it does
 fixes/<id>/*.c             a setup program's source, when it has one
 fixes/<id>/*               the files it puts on the card
 include/fix_game.h         how a setup program reads the game it is run for
+common/registry_setup.c    the setup a fix with "registry" gets: applies registry.txt
 tools/build-fixes.py       builds fixes/ into switch/
 tools/describe-exe.py      what an executable can be matched by
 switch/wine/game-fixes/    what a card holds: index.json, and <id>/ for each fix
@@ -60,8 +61,19 @@ fix's files from beside it.
 
    When several fixes match, the one that asks more of the game wins. That lets
    a fix for one patch level sit beside a fix for every build.
-3. For anything a file copy or a launcher setting cannot do, write a setup
-   program in C, as `war3_setup.c` does. It is built without a C runtime. It
+3. Say what the fix changes, as data where you can:
+   - `registry`: values an installer would have written, for example
+     `{"key": "HKCU\\Software\\Blizzard Entertainment\\Warcraft III\\Video", "name": "reswidth", "dword": 1280}`.
+     The build turns the list into `registry.txt`, with a small generic setup
+     program (`common/registry_setup.c`) that applies it inside Wine. `war3`
+     is done this way.
+   - `game_settings`: values in the game's own INI or XML settings file. The
+     launcher writes them with Autorun's game settings engine. A game that
+     Autorun already has built-in settings for keeps those.
+   - `install`, to put a file somewhere, and `settings`, for the game's
+     launcher settings.
+
+   For anything else, write a setup program in C, as `gh3_setup.c` does. It is built without a C runtime. It
    gets the game's executable as its one argument (`fix_game_folder()` in
    `include/fix_game.h`). It reports each step with `NtDisplayString`, which
    ends up in `autorun_runtime.log`, and exits with 0 when every step worked.

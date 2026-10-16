@@ -40,6 +40,20 @@ fix.json, in each fix's folder:
               already there alone
     settings  the game's own launcher settings, key to value, as its
               .wine-nx.txt holds them ("d3d": "wine", "cpu": "box64")
+    registry  keys an installer would have written, without a program of
+              one's own: a list of {"key": "HKCU\\..." or "HKLM\\...",
+              "name": ..., and one of "string", "dword" or "delete": true},
+              with "view": 64 for a 64-bit game's side of HKLM\\Software
+              (32 otherwise). {game} in a string is the game's folder. The
+              build writes them to registry.txt with common/registry_setup.c
+              as the fix's setup, so a fix has registry or run, not both
+    game_settings
+              values in the game's own settings file, written by the launcher
+              with Autorun's game settings engine (source/game_settings.c):
+              path ({game}/ or {drive_c}/, as install's to), format ("ini" or
+              "xml"), initial_text for a file that is not there yet, and rows
+              of {"section": ..., "key": ..., "initial": ...}. A game Autorun
+              already has settings of its own for keeps those instead
 
 Everything is written to switch/wine/game-fixes/<id>/, and the index to
 switch/wine/game-fixes/index.json with each file's size and SHA-256. The
@@ -66,7 +80,9 @@ out = repo / 'switch/wine/game-fixes'
 index_path = out / 'index.json'
 
 # What source/game_fixes.h in Autorun reads; past these a card leaves a fix out.
-LIMITS = dict(exe=8, match_files=8, files=16, install=8, settings=16, version=4, builds=8)
+LIMITS = dict(exe=8, match_files=8, files=16, install=8, settings=16, version=4, builds=8, registry=64,
+              rows=32)
+REGISTRY_SETUP = 'autorun-registry.exe'
 ID = re.compile(r'^[a-z0-9][a-z0-9-]{0,30}$')
 NAME = re.compile(r'^[A-Za-z0-9][A-Za-z0-9._+-]{0,62}$')
 SETTING = re.compile(r'^[a-z0-9][a-z0-9-]{0,30}$')
@@ -110,7 +126,8 @@ def read_fix(folder):
     if not ID.match(fix):
         fail(fix, 'a fix folder is named in lowercase letters, digits and dashes')
     spec = json.loads((folder / 'fix.json').read_text())
-    known = {'title', 'version', 'required', 'summary', 'match', 'run', 'data', 'install', 'settings'}
+    known = {'title', 'version', 'required', 'summary', 'match', 'run', 'data', 'install', 'settings',
+             'registry', 'game_settings'}
     if set(spec) - known:
         fail(fix, f'unknown keys {sorted(set(spec) - known)}')
     title, summary = spec.get('title', ''), spec.get('summary', '')
@@ -160,6 +177,46 @@ def read_fix(folder):
         if not NAME.match(name) or not (folder / name).is_file():
             fail(fix, f'data file {name!r} is not here')
         files.append(name)
+    registry = spec.get('registry', [])
+    if registry:
+        if run is not None:
+            fail(fix, 'registry is applied by a setup of its own: a fix with run writes its keys itself')
+        if len(registry) > LIMITS['registry']:
+            fail(fix, f'at most {LIMITS["registry"]} registry edits')
+        for item in registry:
+            kinds = [k for k in ('string', 'dword', 'delete') if k in item]
+            key, name = item.get('key', ''), item.get('name', '')
+            if set(item) - {'key', 'name', 'string', 'dword', 'delete', 'view'} or len(kinds) != 1 or \
+                    not isinstance(key, str) or not re.match(r'^HK(CU|LM)\\[^\t\r\n]{1,250}$', key) or \
+                    not isinstance(name, str) or len(name) > 250 or re.search(r'[\t\r\n]', name) or \
+                    item.get('view', 32) not in (32, 64) or \
+                    ('string' in item and (not isinstance(item['string'], str) or len(item['string']) > 1000 or
+                                           re.search(r'[\t\r\n]', item['string']))) or \
+                    ('dword' in item and (not isinstance(item['dword'], int) or isinstance(item['dword'], bool) or
+                                          not 0 <= item['dword'] < 2**32)) or \
+                    ('delete' in item and item['delete'] is not True):
+                fail(fix, f'registry edit {item} has a key under HKCU or HKLM, a name, one of string, dword or '
+                          f'delete, and maybe a view of 32 or 64')
+        files += [REGISTRY_SETUP, 'registry.txt']
+    game_settings = spec.get('game_settings')
+    if game_settings is not None:
+        rows = game_settings.get('rows', [])
+        where = game_settings.get('path', '')
+        rest = where.split('/', 1)[1] if '/' in where else ''
+        if set(game_settings) - {'path', 'format', 'initial_text', 'rows'} or \
+                game_settings.get('format', 'ini') not in ('ini', 'xml') or \
+                not (where.startswith('{game}/') or where.startswith('{drive_c}/')) or len(where) >= 256 or \
+                not relative_ok(rest, False) or re.search(r'\{(?!stem\})', rest) or \
+                not isinstance(game_settings.get('initial_text', ''), str) or \
+                len(game_settings.get('initial_text', '').encode()) > 4000 or \
+                not 0 < len(rows) <= LIMITS['rows']:
+            fail(fix, f'game_settings has a path under {{game}}/ or {{drive_c}}/, a format of ini or xml, '
+                      f'maybe initial_text, and 1 to {LIMITS["rows"]} rows')
+        for row in rows:
+            if set(row) != {'section', 'key', 'initial'} or not all(
+                    isinstance(row[k], str) and 0 < len(row[k]) < 64 and not re.search(r'[\r\n]', row[k])
+                    for k in row):
+                fail(fix, f'game_settings row {row} has a section, a key and an initial value')
     install = spec.get('install', [])
     if len(install) > LIMITS['install']:
         fail(fix, f'at most {LIMITS["install"]} install entries')
@@ -179,11 +236,22 @@ def read_fix(folder):
             SETTING.match(k) and isinstance(v, str) and len(v) < 64 and '\n' not in v and '\r' not in v
             for k, v in settings.items()):
         fail(fix, f'settings are up to {LIMITS["settings"]} key: "value" pairs')
-    if not files and not settings:
+    if not files and not settings and not game_settings:
         fail(fix, 'a fix runs a setup, puts files on the card or changes settings')
     if len(files) > LIMITS['files']:
         fail(fix, f'at most {LIMITS["files"]} files')
     return spec, files
+
+
+def registry_text(edits):
+    """registry.txt, which common/registry_setup.c reads: view, key, name, type and value by tabs."""
+    lines = []
+    for item in edits:
+        kind = next(k for k in ('string', 'dword', 'delete') if k in item)
+        value = item['string'] if kind == 'string' else str(item['dword']) if kind == 'dword' else ''
+        lines.append('\t'.join((str(item.get('view', 32)), item['key'], item.get('name', ''),
+                                 {'string': 'sz', 'dword': 'dword', 'delete': 'delete'}[kind], value)))
+    return '\n'.join(lines) + '\n'
 
 
 def main():
@@ -204,9 +272,13 @@ def main():
         target = out / fix
         target.mkdir(parents=True, exist_ok=True)
         run = spec.get('run')
+        if spec.get('registry'):
+            run = {'source': repo / 'common/registry_setup.c', 'exe': REGISTRY_SETUP, 'libs': ['-ladvapi32']}
         for name in files:
             if run and name == run['exe']:
                 compile_setup(compiler, folder / run['source'], target / name, run.get('libs', []))
+            elif name == 'registry.txt' and spec.get('registry'):
+                (target / name).write_bytes(registry_text(spec['registry']).encode())
             else:
                 shutil.copyfile(folder / name, target / name)
             built.add((fix, name))
@@ -228,11 +300,18 @@ def main():
                                 for i in spec['install']]
         if spec.get('settings'):
             entry['settings'] = spec['settings']
+        if spec.get('game_settings'):
+            entry['game_settings'] = {'path': spec['game_settings']['path'],
+                                      'format': spec['game_settings'].get('format', 'ini'),
+                                      'rows': spec['game_settings']['rows']}
+            if spec['game_settings'].get('initial_text'):
+                entry['game_settings']['initial_text'] = spec['game_settings']['initial_text']
 
         # What a card gets from the fix changed: the version has to say so, or
         # a card that applied the earlier one never hears of it.
         previous = old_fixes.get(fix)
-        payload = lambda e: (e.get('run'), e.get('files'), e.get('install'), e.get('settings'))
+        payload = lambda e: (e.get('run'), e.get('files'), e.get('install'), e.get('settings'),
+                             e.get('game_settings'))
         if previous and payload(previous) != payload(entry) and entry['version'] <= previous['version']:
             fail(fix, f'what it puts on a card changed; raise its version above {previous["version"]}')
         if previous and entry['version'] < previous['version']:

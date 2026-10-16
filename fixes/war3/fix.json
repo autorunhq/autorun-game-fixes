@@ -1,8 +1,52 @@
 {
   "title": "WarCraft III",
-  "version": 1,
+  "version": 2,
   "required": true,
   "summary": "Sets the game's video to the Switch's 1280x720 screen, so the pointer and the touchscreen line up; draws with the game's own OpenGL renderer, which takes half the CPU its Direct3D does; and offers only the 1280x720 mode, so the movies fill the width. Start the game through a 36-bit or 39-bit forwarder.",
-  "match": { "exe": ["war3.exe", "Frozen Throne.exe"], "files": ["Game.dll"] },
-  "run": { "source": "war3_setup.c", "exe": "war3-setup.exe", "libs": ["-ladvapi32"] }
+  "match": {
+    "exe": [
+      "war3.exe",
+      "Frozen Throne.exe"
+    ],
+    "files": [
+      "Game.dll"
+    ]
+  },
+  "registry": [
+    {
+      "key": "HKCU\\Software\\Blizzard Entertainment\\Warcraft III\\Video",
+      "name": "reswidth",
+      "dword": 1280
+    },
+    {
+      "key": "HKCU\\Software\\Blizzard Entertainment\\Warcraft III\\Video",
+      "name": "resheight",
+      "dword": 720
+    },
+    {
+      "key": "HKCU\\Software\\Blizzard Entertainment\\Warcraft III\\Video",
+      "name": "colordepth",
+      "dword": 32
+    },
+    {
+      "key": "HKCU\\Software\\Blizzard Entertainment\\Warcraft III\\Video",
+      "name": "refreshrate",
+      "dword": 60
+    },
+    {
+      "key": "HKCU\\Software\\Blizzard Entertainment\\Warcraft III\\Misc",
+      "name": "seenintromovie",
+      "delete": true
+    },
+    {
+      "key": "HKCU\\Software\\Blizzard Entertainment\\Warcraft III",
+      "name": "Gfx OpenGL",
+      "dword": 1
+    },
+    {
+      "key": "HKCU\\Software\\Wine\\AppDefaults\\war3.exe\\X11 Driver",
+      "name": "EmulateModelist",
+      "string": "Y"
+    }
+  ]
 }
