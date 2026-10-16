@@ -17,9 +17,18 @@ fix.json, in each fix's folder:
               changes, so a card that has an earlier one is offered it again
     required  true when the game may not start without the fix
     summary   what it does, in a sentence or three, for the launcher's question
-    match     exe: the executable names it is for (any case); files: paths,
-              relative to the executable's folder, that must all be there too
-              ("../TSData" for one folder up)
+    match     what the game is recognised by; every kind given must match:
+              exe: the executable names it is for (any case), any of them;
+              version: strings of the executable's version resource, such as
+              {"ProductName": "Warcraft III", "OriginalFilename": "war3.exe"},
+              compared without case, a * at the end matching any rest -- these
+              recognise a renamed executable, and exe may then be left out;
+              timestamp: PE link times and size: file sizes, any of them, to
+              pin builds; files: paths, relative to the executable's folder,
+              that must all be there too ("../TSData" for one folder up).
+              When more than one fix matches, the one asking more wins, so a
+              fix for one build can stand beside one for every build.
+              tools/describe-exe.py prints all of these for an executable
     run       a setup program: source (a C file here, built without a C
               runtime as Autorun's own setups are), exe (its name on the card)
               and libs; the launcher runs it before the game with the game's
@@ -57,7 +66,7 @@ out = repo / 'switch/wine/game-fixes'
 index_path = out / 'index.json'
 
 # What source/game_fixes.h in Autorun reads; past these a card leaves a fix out.
-LIMITS = dict(exe=8, match_files=8, files=16, install=8, settings=16)
+LIMITS = dict(exe=8, match_files=8, files=16, install=8, settings=16, version=4, builds=8)
 ID = re.compile(r'^[a-z0-9][a-z0-9-]{0,30}$')
 NAME = re.compile(r'^[A-Za-z0-9][A-Za-z0-9._+-]{0,62}$')
 SETTING = re.compile(r'^[a-z0-9][a-z0-9-]{0,30}$')
@@ -117,12 +126,25 @@ def read_fix(folder):
 
     match = spec.get('match') or {}
     exes, marks = match.get('exe', []), match.get('files', [])
-    if set(match) - {'exe', 'files'}:
-        fail(fix, 'match has exe and files only')
-    if not 0 < len(exes) <= LIMITS['exe'] or not all(
+    versions = match.get('version', {})
+    if set(match) - {'exe', 'files', 'version', 'timestamp', 'size'}:
+        fail(fix, 'match has exe, version, timestamp, size and files only')
+    if not isinstance(versions, dict) or len(versions) > LIMITS['version'] or not all(
+            isinstance(k, str) and 0 < len(k) < 32 and isinstance(v, str) and 0 < len(v.encode()) < 96
+            for k, v in versions.items()):
+        fail(fix, f'match.version is up to {LIMITS["version"]} "Key": "value" strings')
+    for kind in ('timestamp', 'size'):
+        values = match.get(kind, [])
+        if not isinstance(values, list) or len(values) > LIMITS['builds'] or not all(
+                isinstance(v, int) and not isinstance(v, bool) and 0 < v < (2**32 if kind == 'timestamp' else 2**63)
+                for v in values):
+            fail(fix, f'match.{kind} is up to {LIMITS["builds"]} whole numbers')
+    if not exes and not versions:
+        fail(fix, 'match names the executable, by exe or version, or every program beside its files would match')
+    if len(exes) > LIMITS['exe'] or not all(
             isinstance(e, str) and len(e) < 64 and e.lower().endswith('.exe') and '/' not in e and '\\' not in e
             for e in exes):
-        fail(fix, f'match.exe names 1 to {LIMITS["exe"]} executables')
+        fail(fix, f'match.exe names up to {LIMITS["exe"]} executables')
     if len(marks) > LIMITS['match_files'] or not all(
             isinstance(m, str) and len(m) < 128 and relative_ok(m, True) for m in marks):
         fail(fix, f'match.files names up to {LIMITS["match_files"]} relative paths')
@@ -194,7 +216,8 @@ def main():
             'version': spec['version'],
             'required': spec.get('required', False),
             'summary': spec['summary'],
-            'match': {'exe': spec['match']['exe'], 'files': spec['match'].get('files', [])},
+            'match': {k: spec['match'][k] for k in ('exe', 'version', 'timestamp', 'size', 'files')
+                      if spec['match'].get(k)},
         }
         if run:
             entry['run'] = run['exe']

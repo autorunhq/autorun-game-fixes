@@ -37,6 +37,7 @@ fixes/<id>/*.c             a setup program's source, when it has one
 fixes/<id>/*               the files it puts on the card
 include/fix_game.h         how a setup program reads the game it is run for
 tools/build-fixes.py       builds fixes/ into switch/
+tools/describe-exe.py      what an executable can be matched by
 switch/wine/game-fixes/    what a card holds: index.json, and <id>/ for each fix
 ```
 
@@ -46,16 +47,27 @@ fix's files from beside it.
 
 ## Adding a fix
 
-1. Make `fixes/<id>/fix.json`. The format is described at the top of
-   `tools/build-fixes.py`. A game is matched by executable name plus files that
-   must sit beside it, so a fix is not offered to an unrelated `game.exe`.
-2. For anything a file copy or a launcher setting cannot do, write a setup
+1. Run `tools/describe-exe.py` on the game's executable. It prints the
+   exe's size, link time and version strings (`ProductName`,
+   `OriginalFilename`…) as a `match` to start from.
+2. Make `fixes/<id>/fix.json`. The format is described at the top of
+   `tools/build-fixes.py`. A game can be matched by several things, and every
+   one that is given must hold:
+   - `exe`: the executable's file name.
+   - `version`: its version strings, which still match when the file is
+     renamed. A `*` at the end of a value matches any rest.
+   - `timestamp` or `size`: one exact build of the game.
+   - `files`: files that must sit beside it.
+
+   When several fixes match, the one that asks more of the game wins. That lets
+   a fix for one patch level sit beside a fix for every build.
+3. For anything a file copy or a launcher setting cannot do, write a setup
    program in C, as `war3_setup.c` does. It is built without a C runtime. It
    gets the game's executable as its one argument (`fix_game_folder()` in
    `include/fix_game.h`). It reports each step with `NtDisplayString`, which
    ends up in `autorun_runtime.log`, and exits with 0 when every step worked.
    Running it twice must be harmless.
-3. Run `tools/build-fixes.py` from inside an Autorun checkout; its llvm-mingw
+4. Run `tools/build-fixes.py` from inside an Autorun checkout; its llvm-mingw
    builds the setup programs. Then commit `fixes/` and `switch/` together.
    Pushing to `main` publishes the fix.
 
