@@ -7,3 +7,4 @@ jobs:
       - uses: actions/checkout@v4
       - run: python3 tests/check_index.py
       - run: python3 tests/check_sims2_setup.py
+      - run: python3 tests/check_sims2_layout.py
