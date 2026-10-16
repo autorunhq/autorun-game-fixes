@@ -86,6 +86,9 @@ import shutil
 import subprocess
 import sys
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import fixes_list  # noqa: E402
+
 repo = Path(__file__).resolve().parents[1]
 fixes = repo / 'fixes'
 profiles_dir = repo / 'profiles'
@@ -387,6 +390,7 @@ def main():
         index['serial'] += 1
     out.mkdir(parents=True, exist_ok=True)
     index_path.write_text(json.dumps(index, indent=1, ensure_ascii=False) + '\n')
+    (repo / 'FIXES.md').write_text(fixes_list.render(index))
     print(f'{len(entries)} fixes, {len(profiles)} profiles, serial {index["serial"]}: '
           f'{index_path.relative_to(repo)}')
 

@@ -39,4 +39,10 @@ fixes = {p.name for p in (repo / 'fixes').iterdir() if (p / 'fix.json').is_file(
 assert fixes == {f['id'] for f in index['fixes']}, f'fixes not in the index: {fixes ^ {f["id"] for f in index["fixes"]}}'
 stray = {p for p in out.rglob('*') if p.is_file() and p.name != 'index.json'} - listed
 assert not stray, f'files the index does not name: {sorted(str(p.relative_to(repo)) for p in stray)}'
+# FIXES.md is the index, for people: written by the build, never by hand.
+import sys
+sys.path.insert(0, str(repo / 'tools'))
+import fixes_list  # noqa: E402
+assert (repo / 'FIXES.md').read_text() == fixes_list.render(index), 'FIXES.md is out of date; run tools/build-fixes.py'
+
 print(f'index serial {index["serial"]}: {len(index["fixes"])} fixes, {len(listed)} files, all as listed')

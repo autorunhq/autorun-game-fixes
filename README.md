@@ -19,14 +19,11 @@ to download it.
 **Without a network:** download this repository (Code, Download ZIP) and copy
 its `switch` folder to the root of the SD card, merging folders.
 
-## Fixes
+## Which games
 
-| Fix | Game | What it does |
-|---|---|---|
-| `war3` | WarCraft III | 1280x720 video settings, the game's own OpenGL renderer, the movies at full width |
-| `sims2` | The Sims 2 Ultimate Collection | The release's registry keys with the card's paths, a DXVK memory limit, Graphics Rules at 1280x720 |
-| `gh3` | Guitar Hero III | Aspyr's registry key, 1280x720 with the CPU-heavy details off, DXVK's texture memory |
-| `halo` | Halo: Combat Evolved | Controls: WASD on the left stick, the arrows on the d-pad |
+**[FIXES.md](FIXES.md)** lists every fix and settings profile published here,
+with what each does and how its game is recognised. The build writes it from
+the index, so it's always current.
 
 ## Settings profiles
 
@@ -53,6 +50,9 @@ include/fix_game.h         how a setup program reads the game it is run for
 common/registry_setup.c    the setup a fix with "registry" gets: applies registry.txt
 tools/build-fixes.py       builds fixes/ into switch/
 tools/describe-exe.py      what an executable can be matched by
+tools/fixes_list.py        writes FIXES.md from the index
+FIXES.md                   every fix and profile, for people (written by the build)
+AGENTS.md                  everything a fix can do, for agents and contributors
 profiles/<id>.json         a game's settings profile
 switch/wine/game-fixes/    what a card holds: index.json, and <id>/ for each fix
 ```
