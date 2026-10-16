@@ -26,7 +26,6 @@ its `switch` folder to the root of the SD card, merging folders.
 | `war3` | WarCraft III | 1280x720 video settings, the game's own OpenGL renderer, the movies at full width |
 | `sims2` | The Sims 2 Ultimate Collection | The release's registry keys with the card's paths, a DXVK memory limit, Graphics Rules at 1280x720 |
 | `gh3` | Guitar Hero III | Aspyr's registry key, 1280x720 with the CPU-heavy details off, DXVK's texture memory |
-| `falloutnv` | Fallout: New Vegas | The FalloutPrefs.ini its launcher would write, so the game does not hand itself over to that launcher |
 | `halo` | Halo: Combat Evolved | Controls: WASD on the left stick, the arrows on the d-pad |
 
 ## Layout
