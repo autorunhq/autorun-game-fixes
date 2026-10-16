@@ -1,0 +1,873 @@
+{
+ "version": 1,
+ "match": {
+  "exe": [
+   "MOHA.exe"
+  ]
+ },
+ "machine": "x86",
+ "path": "{drive_c}/users/steamuser/Documents/EA Games/Medal of Honor Airborne(tm)/Config/MOHAAutorun.ini",
+ "format": "ini",
+ "initial_text": "[Configuration]\r\nBasedOn=..\\MOHAGame\\Config\\DefaultEngine.ini\r\n",
+ "presets": [
+  "Low",
+  "Medium",
+  "High"
+ ],
+ "arguments": "-NO_LAUNCHER -NOWXWINDOWS -DEFENGINEINI=\"C:\\users\\steamuser\\Documents\\EA Games\\Medal of Honor Airborne(tm)\\Config\\MOHAAutorun.ini\"",
+ "rows": [
+  {
+   "section": "WinDrv.WindowsClient",
+   "key": "StartupResolutionX",
+   "key2": "StartupResolutionY",
+   "label": "Resolution",
+   "type": "resolution",
+   "initial": "1280x720",
+   "choices": [
+    {
+     "label": "800 x 600",
+     "value": "800x600"
+    },
+    {
+     "label": "960 x 540",
+     "value": "960x540"
+    },
+    {
+     "label": "1280 x 720",
+     "value": "1280x720"
+    },
+    {
+     "label": "1600 x 900",
+     "value": "1600x900"
+    },
+    {
+     "label": "1920 x 1080",
+     "value": "1920x1080"
+    }
+   ]
+  },
+  {
+   "section": "WinDrv.WindowsClient",
+   "key": "StartupFullscreen",
+   "label": "Fullscreen",
+   "type": "text",
+   "initial": "True",
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "Engine.Engine",
+   "key": "bSubtitlesEnabled",
+   "label": "Subtitles",
+   "type": "text",
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "ALAudio.ALAudioDevice",
+   "key": "MaxChannels",
+   "label": "Audio channels",
+   "type": "integer",
+   "presets": [
+    "20",
+    "90",
+    "91",
+    null
+   ]
+  },
+  {
+   "section": "ALAudio.ALAudioDevice",
+   "key": "UseEffectsProcessing",
+   "label": "Audio effects",
+   "type": "text",
+   "presets": [
+    "False",
+    "False",
+    "True",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bTickLODAnims",
+   "label": "Animation LOD",
+   "type": "text",
+   "presets": [
+    "True",
+    "False",
+    "False",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bAllowDynamicDecals",
+   "label": "Dynamic decals",
+   "type": "text",
+   "presets": [
+    "True",
+    "True",
+    "True",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bAllowStaticDecals",
+   "label": "Static decals",
+   "type": "text",
+   "presets": [
+    "False",
+    "True",
+    "False",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bAllowDynamicLights",
+   "label": "Dynamic lights",
+   "type": "text",
+   "presets": [
+    "True",
+    "True",
+    "True",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bAllowDynamicShadows",
+   "label": "Dynamic shadows",
+   "type": "text",
+   "presets": [
+    "True",
+    "True",
+    "True",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bAllowLightEnvironmentShadows",
+   "label": "Environment shadows",
+   "type": "text",
+   "presets": [
+    "True",
+    "True",
+    "True",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bGroupShadows",
+   "label": "Grouped shadows",
+   "type": "text",
+   "presets": [
+    "True",
+    "False",
+    "False",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bForceFallbackShader",
+   "label": "Simplified shaders",
+   "type": "text",
+   "presets": [
+    "True",
+    "False",
+    "False",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bAllowBloom",
+   "label": "Bloom",
+   "type": "text",
+   "presets": [
+    "False",
+    "True",
+    "True",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bAllowDepthOfField",
+   "label": "Depth of field",
+   "type": "text",
+   "presets": [
+    "False",
+    "True",
+    "True",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bAllowMotionBlur",
+   "label": "Motion blur",
+   "type": "text",
+   "presets": [
+    "False",
+    "False",
+    "True",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bPostFX",
+   "label": "Post-processing",
+   "type": "text",
+   "presets": [
+    "False",
+    "True",
+    "True",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bSimplePostFX",
+   "label": "Simplified post-processing",
+   "type": "text",
+   "presets": [
+    "False",
+    "True",
+    "False",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "bMinspecCull",
+   "label": "Low-spec object culling",
+   "type": "text",
+   "presets": [
+    "True",
+    "False",
+    "False",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "False"
+    },
+    {
+     "label": "Enabled",
+     "value": "True"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "ScreenPercentage",
+   "label": "Render scale (%)",
+   "type": "number",
+   "presets": [
+    "100",
+    "100",
+    "100",
+    null
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "SkeletalMeshLODBias",
+   "label": "Character LOD bias",
+   "type": "number",
+   "presets": [
+    "1",
+    "1",
+    "0",
+    null
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "StaticMeshLODBias",
+   "label": "Object LOD bias",
+   "type": "number",
+   "presets": [
+    "2",
+    "1",
+    "0",
+    null
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "CullDistanceBiasBase",
+   "label": "Object distance scale",
+   "type": "number",
+   "presets": [
+    "0.4",
+    "0.6",
+    "1",
+    null
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "ParticleCullExemptDistance",
+   "label": "Particle culling distance",
+   "type": "number",
+   "presets": [
+    "4000",
+    "4000",
+    "0",
+    null
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "ParticleLODBias",
+   "label": "Particle LOD bias",
+   "type": "number",
+   "presets": [
+    "3",
+    "2",
+    "0",
+    null
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "MaxNumberOfDynamicDecals",
+   "label": "Dynamic decal limit",
+   "type": "text",
+   "presets": [
+    "20",
+    "50",
+    "-1",
+    null
+   ],
+   "choices": [
+    {
+     "label": "20",
+     "value": "20"
+    },
+    {
+     "label": "50",
+     "value": "50"
+    },
+    {
+     "label": "Unlimited",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "MaxNumberOfStaticDecals",
+   "label": "Static decal limit",
+   "type": "integer",
+   "presets": [
+    "0",
+    "0",
+    "0",
+    null
+   ]
+  },
+  {
+   "section": "MOHAGame.MOHAScalabilityOptions",
+   "key": "MaxParticlesAllowed",
+   "label": "Particle limit",
+   "type": "text",
+   "presets": [
+    "500",
+    "700",
+    "-1",
+    null
+   ],
+   "choices": [
+    {
+     "label": "500",
+     "value": "500"
+    },
+    {
+     "label": "700",
+     "value": "700"
+    },
+    {
+     "label": "Unlimited",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "section": "TextureLODSettings",
+   "key": "TEXTUREGROUP_Character",
+   "label": "Character textures",
+   "type": "text",
+   "presets": [
+    "(MinLODSize=64,MaxLODSize=1024,LODBias=2)",
+    "(MinLODSize=128,MaxLODSize=2048,LODBias=1)",
+    "(MinLODSize=256,MaxLODSize=4096,LODBias=0)",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "(MinLODSize=64,MaxLODSize=1024,LODBias=2)"
+    },
+    {
+     "label": "Medium",
+     "value": "(MinLODSize=128,MaxLODSize=2048,LODBias=1)"
+    },
+    {
+     "label": "High",
+     "value": "(MinLODSize=256,MaxLODSize=4096,LODBias=0)"
+    }
+   ]
+  },
+  {
+   "section": "TextureLODSettings",
+   "key": "TEXTUREGROUP_CharacterNormalMap",
+   "label": "Character normal maps",
+   "type": "text",
+   "presets": [
+    "(MinLODSize=64,MaxLODSize=1024,LODBias=2)",
+    "(MinLODSize=128,MaxLODSize=2048,LODBias=1)",
+    "(MinLODSize=256,MaxLODSize=4096,LODBias=0)",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "(MinLODSize=64,MaxLODSize=1024,LODBias=2)"
+    },
+    {
+     "label": "Medium",
+     "value": "(MinLODSize=128,MaxLODSize=2048,LODBias=1)"
+    },
+    {
+     "label": "High",
+     "value": "(MinLODSize=256,MaxLODSize=4096,LODBias=0)"
+    }
+   ]
+  },
+  {
+   "section": "TextureLODSettings",
+   "key": "TEXTUREGROUP_Effects",
+   "label": "Effects textures",
+   "type": "text",
+   "presets": [
+    "(MinLODSize=64,MaxLODSize=1024,LODBias=2)",
+    "(MinLODSize=128,MaxLODSize=2048,LODBias=1)",
+    "(MinLODSize=256,MaxLODSize=4096,LODBias=0)",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "(MinLODSize=64,MaxLODSize=1024,LODBias=2)"
+    },
+    {
+     "label": "Medium",
+     "value": "(MinLODSize=128,MaxLODSize=2048,LODBias=1)"
+    },
+    {
+     "label": "High",
+     "value": "(MinLODSize=256,MaxLODSize=4096,LODBias=0)"
+    }
+   ]
+  },
+  {
+   "section": "TextureLODSettings",
+   "key": "TEXTUREGROUP_LightAndShadowMap",
+   "label": "Light and shadow maps",
+   "type": "text",
+   "presets": [
+    "(MinLODSize=64,MaxLODSize=1024,LODBias=2)",
+    "(MinLODSize=128,MaxLODSize=2048,LODBias=1)",
+    "(MinLODSize=256,MaxLODSize=4096,LODBias=0)",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "(MinLODSize=64,MaxLODSize=1024,LODBias=2)"
+    },
+    {
+     "label": "Medium",
+     "value": "(MinLODSize=128,MaxLODSize=2048,LODBias=1)"
+    },
+    {
+     "label": "High",
+     "value": "(MinLODSize=256,MaxLODSize=4096,LODBias=0)"
+    }
+   ]
+  },
+  {
+   "section": "TextureLODSettings",
+   "key": "TEXTUREGROUP_Skybox",
+   "label": "Sky textures",
+   "type": "text",
+   "presets": [
+    "(MinLODSize=64,MaxLODSize=1024,LODBias=2)",
+    "(MinLODSize=128,MaxLODSize=2048,LODBias=1)",
+    "(MinLODSize=256,MaxLODSize=4096,LODBias=0)",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "(MinLODSize=64,MaxLODSize=1024,LODBias=2)"
+    },
+    {
+     "label": "Medium",
+     "value": "(MinLODSize=128,MaxLODSize=2048,LODBias=1)"
+    },
+    {
+     "label": "High",
+     "value": "(MinLODSize=256,MaxLODSize=4096,LODBias=0)"
+    }
+   ]
+  },
+  {
+   "section": "TextureLODSettings",
+   "key": "TEXTUREGROUP_Vehicle",
+   "label": "Vehicle textures",
+   "type": "text",
+   "presets": [
+    "(MinLODSize=64,MaxLODSize=1024,LODBias=2)",
+    "(MinLODSize=128,MaxLODSize=2048,LODBias=1)",
+    "(MinLODSize=256,MaxLODSize=4096,LODBias=0)",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "(MinLODSize=64,MaxLODSize=1024,LODBias=2)"
+    },
+    {
+     "label": "Medium",
+     "value": "(MinLODSize=128,MaxLODSize=2048,LODBias=1)"
+    },
+    {
+     "label": "High",
+     "value": "(MinLODSize=256,MaxLODSize=4096,LODBias=0)"
+    }
+   ]
+  },
+  {
+   "section": "TextureLODSettings",
+   "key": "TEXTUREGROUP_VehicleNormalMap",
+   "label": "Vehicle normal maps",
+   "type": "text",
+   "presets": [
+    "(MinLODSize=64,MaxLODSize=1024,LODBias=2)",
+    "(MinLODSize=128,MaxLODSize=2048,LODBias=1)",
+    "(MinLODSize=256,MaxLODSize=4096,LODBias=0)",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "(MinLODSize=64,MaxLODSize=1024,LODBias=2)"
+    },
+    {
+     "label": "Medium",
+     "value": "(MinLODSize=128,MaxLODSize=2048,LODBias=1)"
+    },
+    {
+     "label": "High",
+     "value": "(MinLODSize=256,MaxLODSize=4096,LODBias=0)"
+    }
+   ]
+  },
+  {
+   "section": "TextureLODSettings",
+   "key": "TEXTUREGROUP_Weapon",
+   "label": "Weapon textures",
+   "type": "text",
+   "presets": [
+    "(MinLODSize=64,MaxLODSize=1024,LODBias=2)",
+    "(MinLODSize=128,MaxLODSize=2048,LODBias=1)",
+    "(MinLODSize=256,MaxLODSize=4096,LODBias=0)",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "(MinLODSize=64,MaxLODSize=1024,LODBias=2)"
+    },
+    {
+     "label": "Medium",
+     "value": "(MinLODSize=128,MaxLODSize=2048,LODBias=1)"
+    },
+    {
+     "label": "High",
+     "value": "(MinLODSize=256,MaxLODSize=4096,LODBias=0)"
+    }
+   ]
+  },
+  {
+   "section": "TextureLODSettings",
+   "key": "TEXTUREGROUP_WeaponNormalMap",
+   "label": "Weapon normal maps",
+   "type": "text",
+   "presets": [
+    "(MinLODSize=64,MaxLODSize=1024,LODBias=2)",
+    "(MinLODSize=128,MaxLODSize=2048,LODBias=1)",
+    "(MinLODSize=256,MaxLODSize=4096,LODBias=0)",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "(MinLODSize=64,MaxLODSize=1024,LODBias=2)"
+    },
+    {
+     "label": "Medium",
+     "value": "(MinLODSize=128,MaxLODSize=2048,LODBias=1)"
+    },
+    {
+     "label": "High",
+     "value": "(MinLODSize=256,MaxLODSize=4096,LODBias=0)"
+    }
+   ]
+  },
+  {
+   "section": "TextureLODSettings",
+   "key": "TEXTUREGROUP_World",
+   "label": "World textures",
+   "type": "text",
+   "presets": [
+    "(MinLODSize=64,MaxLODSize=1024,LODBias=2)",
+    "(MinLODSize=128,MaxLODSize=2048,LODBias=1)",
+    "(MinLODSize=256,MaxLODSize=4096,LODBias=0)",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "(MinLODSize=64,MaxLODSize=1024,LODBias=2)"
+    },
+    {
+     "label": "Medium",
+     "value": "(MinLODSize=128,MaxLODSize=2048,LODBias=1)"
+    },
+    {
+     "label": "High",
+     "value": "(MinLODSize=256,MaxLODSize=4096,LODBias=0)"
+    }
+   ]
+  },
+  {
+   "section": "TextureLODSettings",
+   "key": "TEXTUREGROUP_WorldNormalMap",
+   "label": "World normal maps",
+   "type": "text",
+   "presets": [
+    "(MinLODSize=64,MaxLODSize=1024,LODBias=2)",
+    "(MinLODSize=128,MaxLODSize=2048,LODBias=1)",
+    "(MinLODSize=256,MaxLODSize=4096,LODBias=0)",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "(MinLODSize=64,MaxLODSize=1024,LODBias=2)"
+    },
+    {
+     "label": "Medium",
+     "value": "(MinLODSize=128,MaxLODSize=2048,LODBias=1)"
+    },
+    {
+     "label": "High",
+     "value": "(MinLODSize=256,MaxLODSize=4096,LODBias=0)"
+    }
+   ]
+  },
+  {
+   "section": "TextureLODSettings",
+   "key": "TEXTUREGROUP_RenderTarget",
+   "label": "Render target quality",
+   "type": "text",
+   "presets": [
+    "(MinLODSize=1,MaxLODSize=1024,LODBias=2)",
+    "(MinLODSize=1,MaxLODSize=2048,LODBias=1)",
+    "(MinLODSize=1,MaxLODSize=4096,LODBias=0)",
+    null
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "(MinLODSize=1,MaxLODSize=1024,LODBias=2)"
+    },
+    {
+     "label": "Medium",
+     "value": "(MinLODSize=1,MaxLODSize=2048,LODBias=1)"
+    },
+    {
+     "label": "High",
+     "value": "(MinLODSize=1,MaxLODSize=4096,LODBias=0)"
+    }
+   ]
+  }
+ ]
+}

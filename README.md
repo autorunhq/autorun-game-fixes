@@ -28,6 +28,21 @@ its `switch` folder to the root of the SD card, merging folders.
 | `gh3` | Guitar Hero III | Aspyr's registry key, 1280x720 with the CPU-heavy details off, DXVK's texture memory |
 | `halo` | Halo: Combat Evolved | Controls: WASD on the left stick, the arrows on the d-pad |
 
+## Settings profiles
+
+`profiles/<id>.json` holds the per-game settings screens Autorun shows: the
+game's own INI or XML file, with presets, choices and help text. Autorun
+writes the values before the game starts. Unlike a fix, a profile is not
+asked about.
+
+A game Autorun has a profile built in for keeps its built-in one. The copies
+here are kept identical to the built-in ones by Autorun's
+`tools/export-game-profiles.py`, and its `tests/game_profiles.c` checks every
+one comes back from JSON unchanged. To move a game's profile out of Autorun:
+export, publish this repository, then remove it from Autorun's
+`game_settings_builtin`. A profile for a game Autorun has none for works as
+soon as it is published here.
+
 ## Layout
 
 ```
@@ -38,6 +53,7 @@ include/fix_game.h         how a setup program reads the game it is run for
 common/registry_setup.c    the setup a fix with "registry" gets: applies registry.txt
 tools/build-fixes.py       builds fixes/ into switch/
 tools/describe-exe.py      what an executable can be matched by
+profiles/<id>.json         a game's settings profile
 switch/wine/game-fixes/    what a card holds: index.json, and <id>/ for each fix
 ```
 

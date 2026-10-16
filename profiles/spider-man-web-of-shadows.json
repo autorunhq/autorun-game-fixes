@@ -1,0 +1,8223 @@
+{
+ "version": 1,
+ "match": {
+  "exe": [
+   "Spider-Man Web of Shadows.exe"
+  ]
+ },
+ "machine": "x86",
+ "path": "{drive_c}/users/steamuser/AppData/Local/Activision/Spider-Man Web of Shadows/Config.xml",
+ "format": "xml",
+ "initial_text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<r>\n  <s id=\"Version\">7</s>\n</r>\n",
+ "pending_resolution": [
+  "VideoDesiredW",
+  "VideoDesiredH"
+ ],
+ "rows": [
+  {
+   "section": null,
+   "key": "VideoW",
+   "key2": "VideoH",
+   "label": "Resolution",
+   "type": "resolution",
+   "initial": "1280x720",
+   "choices": [
+    {
+     "label": "800 x 600",
+     "value": "800x600"
+    },
+    {
+     "label": "1024 x 768",
+     "value": "1024x768"
+    },
+    {
+     "label": "1280 x 720",
+     "value": "1280x720"
+    },
+    {
+     "label": "1280 x 800",
+     "value": "1280x800"
+    },
+    {
+     "label": "1280 x 1024",
+     "value": "1280x1024"
+    },
+    {
+     "label": "1600 x 900",
+     "value": "1600x900"
+    },
+    {
+     "label": "1920 x 1080",
+     "value": "1920x1080"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "Windowed",
+   "label": "Display mode",
+   "type": "integer",
+   "initial": "0",
+   "choices": [
+    {
+     "label": "Fullscreen",
+     "value": "0"
+    },
+    {
+     "label": "Windowed",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "VideoVSync",
+   "label": "VSync",
+   "type": "integer",
+   "initial": "0",
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "VideoParticles",
+   "label": "Particles",
+   "type": "integer",
+   "initial": "1",
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "VideoShadows",
+   "label": "Shadows",
+   "type": "integer",
+   "initial": "1",
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "VideoPostProcFx",
+   "label": "Post-processing",
+   "type": "integer",
+   "initial": "1",
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "MouseSens",
+   "label": "Mouse sensitivity",
+   "type": "number",
+   "initial": "50"
+  },
+  {
+   "section": null,
+   "key": "ActionLeft",
+   "label": "Move left",
+   "type": "integer",
+   "initial": "286",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionRight",
+   "label": "Move right",
+   "type": "integer",
+   "initial": "288",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionForward",
+   "label": "Move forward",
+   "type": "integer",
+   "initial": "273",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionBackward",
+   "label": "Move backward",
+   "type": "integer",
+   "initial": "287",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionSuit",
+   "label": "Switch suit",
+   "type": "integer",
+   "initial": "314",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionWallCrawl",
+   "label": "Wall crawl",
+   "type": "integer",
+   "initial": "272",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionWallSprint",
+   "label": "Wall sprint",
+   "type": "integer",
+   "initial": "274",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionTarget",
+   "label": "Lock target",
+   "type": "integer",
+   "initial": "271",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionSwing",
+   "label": "Web swing",
+   "type": "integer",
+   "initial": "525",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionJump",
+   "label": "Jump",
+   "type": "integer",
+   "initial": "313",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionShoot",
+   "label": "Shoot web",
+   "type": "integer",
+   "initial": "300",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionAttack",
+   "label": "Attack",
+   "type": "integer",
+   "initial": "524",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionWebStrike",
+   "label": "Web strike",
+   "type": "integer",
+   "initial": "302",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionUpgrades",
+   "label": "Upgrades",
+   "type": "integer",
+   "initial": "289",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionAllyPrev",
+   "label": "Previous ally",
+   "type": "integer",
+   "initial": "459",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionAllyNext",
+   "label": "Next ally",
+   "type": "integer",
+   "initial": "461",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionAllySummon",
+   "label": "Summon ally",
+   "type": "integer",
+   "initial": "464",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionAllyDismiss",
+   "label": "Dismiss ally",
+   "type": "integer",
+   "initial": "456",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  },
+  {
+   "section": null,
+   "key": "ActionCenterCamera",
+   "label": "Center camera",
+   "type": "integer",
+   "initial": "526",
+   "choices": [
+    {
+     "label": "Unbound",
+     "value": "0"
+    },
+    {
+     "label": "Mouse left",
+     "value": "524"
+    },
+    {
+     "label": "Mouse right",
+     "value": "525"
+    },
+    {
+     "label": "Mouse middle",
+     "value": "526"
+    },
+    {
+     "label": "Mouse 4",
+     "value": "527"
+    },
+    {
+     "label": "Mouse 5",
+     "value": "528"
+    },
+    {
+     "label": "A",
+     "value": "286"
+    },
+    {
+     "label": "B",
+     "value": "304"
+    },
+    {
+     "label": "C",
+     "value": "302"
+    },
+    {
+     "label": "D",
+     "value": "288"
+    },
+    {
+     "label": "E",
+     "value": "274"
+    },
+    {
+     "label": "F",
+     "value": "289"
+    },
+    {
+     "label": "G",
+     "value": "290"
+    },
+    {
+     "label": "H",
+     "value": "291"
+    },
+    {
+     "label": "I",
+     "value": "279"
+    },
+    {
+     "label": "J",
+     "value": "292"
+    },
+    {
+     "label": "K",
+     "value": "293"
+    },
+    {
+     "label": "L",
+     "value": "294"
+    },
+    {
+     "label": "M",
+     "value": "306"
+    },
+    {
+     "label": "N",
+     "value": "305"
+    },
+    {
+     "label": "O",
+     "value": "280"
+    },
+    {
+     "label": "P",
+     "value": "281"
+    },
+    {
+     "label": "Q",
+     "value": "272"
+    },
+    {
+     "label": "R",
+     "value": "275"
+    },
+    {
+     "label": "S",
+     "value": "287"
+    },
+    {
+     "label": "T",
+     "value": "276"
+    },
+    {
+     "label": "U",
+     "value": "278"
+    },
+    {
+     "label": "V",
+     "value": "303"
+    },
+    {
+     "label": "W",
+     "value": "273"
+    },
+    {
+     "label": "X",
+     "value": "301"
+    },
+    {
+     "label": "Y",
+     "value": "277"
+    },
+    {
+     "label": "Z",
+     "value": "300"
+    },
+    {
+     "label": "0",
+     "value": "267"
+    },
+    {
+     "label": "1",
+     "value": "258"
+    },
+    {
+     "label": "2",
+     "value": "259"
+    },
+    {
+     "label": "3",
+     "value": "260"
+    },
+    {
+     "label": "4",
+     "value": "261"
+    },
+    {
+     "label": "5",
+     "value": "262"
+    },
+    {
+     "label": "6",
+     "value": "263"
+    },
+    {
+     "label": "7",
+     "value": "264"
+    },
+    {
+     "label": "8",
+     "value": "265"
+    },
+    {
+     "label": "9",
+     "value": "266"
+    },
+    {
+     "label": "Space",
+     "value": "313"
+    },
+    {
+     "label": "Tab",
+     "value": "271"
+    },
+    {
+     "label": "Enter",
+     "value": "284"
+    },
+    {
+     "label": "Escape",
+     "value": "257"
+    },
+    {
+     "label": "Backspace",
+     "value": "270"
+    },
+    {
+     "label": "Caps Lock",
+     "value": "314"
+    },
+    {
+     "label": "Left Shift",
+     "value": "298"
+    },
+    {
+     "label": "Right Shift",
+     "value": "310"
+    },
+    {
+     "label": "Left Ctrl",
+     "value": "285"
+    },
+    {
+     "label": "Right Ctrl",
+     "value": "413"
+    },
+    {
+     "label": "Left Alt",
+     "value": "312"
+    },
+    {
+     "label": "Right Alt",
+     "value": "440"
+    },
+    {
+     "label": "Arrow left",
+     "value": "459"
+    },
+    {
+     "label": "Arrow right",
+     "value": "461"
+    },
+    {
+     "label": "Arrow up",
+     "value": "456"
+    },
+    {
+     "label": "Arrow down",
+     "value": "464"
+    },
+    {
+     "label": "Insert",
+     "value": "466"
+    },
+    {
+     "label": "Delete",
+     "value": "467"
+    },
+    {
+     "label": "Home",
+     "value": "455"
+    },
+    {
+     "label": "End",
+     "value": "463"
+    },
+    {
+     "label": "Page Up",
+     "value": "457"
+    },
+    {
+     "label": "Page Down",
+     "value": "465"
+    },
+    {
+     "label": "F1",
+     "value": "315"
+    },
+    {
+     "label": "F2",
+     "value": "316"
+    },
+    {
+     "label": "F3",
+     "value": "317"
+    },
+    {
+     "label": "F4",
+     "value": "318"
+    },
+    {
+     "label": "F5",
+     "value": "319"
+    },
+    {
+     "label": "F6",
+     "value": "320"
+    },
+    {
+     "label": "F7",
+     "value": "321"
+    },
+    {
+     "label": "F8",
+     "value": "322"
+    },
+    {
+     "label": "F9",
+     "value": "323"
+    },
+    {
+     "label": "F10",
+     "value": "324"
+    },
+    {
+     "label": "F11",
+     "value": "343"
+    },
+    {
+     "label": "F12",
+     "value": "344"
+    },
+    {
+     "label": "Minus",
+     "value": "268"
+    },
+    {
+     "label": "Equals",
+     "value": "269"
+    },
+    {
+     "label": "Left bracket",
+     "value": "282"
+    },
+    {
+     "label": "Right bracket",
+     "value": "283"
+    },
+    {
+     "label": "Semicolon",
+     "value": "295"
+    },
+    {
+     "label": "Apostrophe",
+     "value": "296"
+    },
+    {
+     "label": "Grave",
+     "value": "297"
+    },
+    {
+     "label": "Backslash",
+     "value": "299"
+    },
+    {
+     "label": "Comma",
+     "value": "307"
+    },
+    {
+     "label": "Period",
+     "value": "308"
+    },
+    {
+     "label": "Slash",
+     "value": "309"
+    },
+    {
+     "label": "Num Lock",
+     "value": "325"
+    },
+    {
+     "label": "Numpad 0",
+     "value": "338"
+    },
+    {
+     "label": "Numpad 1",
+     "value": "335"
+    },
+    {
+     "label": "Numpad 2",
+     "value": "336"
+    },
+    {
+     "label": "Numpad 3",
+     "value": "337"
+    },
+    {
+     "label": "Numpad 4",
+     "value": "331"
+    },
+    {
+     "label": "Numpad 5",
+     "value": "332"
+    },
+    {
+     "label": "Numpad 6",
+     "value": "333"
+    },
+    {
+     "label": "Numpad 7",
+     "value": "327"
+    },
+    {
+     "label": "Numpad 8",
+     "value": "328"
+    },
+    {
+     "label": "Numpad 9",
+     "value": "329"
+    },
+    {
+     "label": "Numpad add",
+     "value": "334"
+    },
+    {
+     "label": "Numpad subtract",
+     "value": "330"
+    },
+    {
+     "label": "Numpad multiply",
+     "value": "311"
+    },
+    {
+     "label": "Numpad divide",
+     "value": "437"
+    },
+    {
+     "label": "Numpad decimal",
+     "value": "339"
+    },
+    {
+     "label": "Numpad enter",
+     "value": "412"
+    }
+   ]
+  }
+ ]
+}

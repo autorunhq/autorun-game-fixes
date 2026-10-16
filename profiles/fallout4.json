@@ -1,0 +1,861 @@
+{
+ "version": 1,
+ "match": {
+  "exe": [
+   "Fallout4.exe"
+  ]
+ },
+ "machine": "x64",
+ "path": "{drive_c}/users/steamuser/Documents/My Games/Fallout4/Fallout4Prefs.ini",
+ "format": "ini",
+ "presets": [
+  "Low",
+  "Medium",
+  "High",
+  "Ultra"
+ ],
+ "rows": [
+  {
+   "section": "Display",
+   "key": "iSize W",
+   "key2": "iSize H",
+   "label": "Resolution",
+   "type": "resolution",
+   "initial": "1280x720",
+   "choices": [
+    {
+     "label": "960 x 540",
+     "value": "960x540"
+    },
+    {
+     "label": "1024 x 576",
+     "value": "1024x576"
+    },
+    {
+     "label": "1280 x 720",
+     "value": "1280x720"
+    },
+    {
+     "label": "1600 x 900",
+     "value": "1600x900"
+    },
+    {
+     "label": "1920 x 1080",
+     "value": "1920x1080"
+    }
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "bFull Screen",
+   "label": "Fullscreen",
+   "type": "integer",
+   "initial": "0",
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "bBorderless",
+   "label": "Borderless window",
+   "type": "integer",
+   "initial": "1",
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "NVFlex",
+   "key": "bNVFlexEnable",
+   "label": "Weapon debris",
+   "type": "integer",
+   "initial": "0",
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "NVHBAO",
+   "key": "bEnable",
+   "label": "Ambient occlusion (HBAO+)",
+   "type": "integer",
+   "initial": "0",
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "sAntialiasing",
+   "label": "Anti-aliasing",
+   "type": "text",
+   "presets": [
+    "FXAA",
+    "TAA",
+    "TAA",
+    "TAA"
+   ],
+   "choices": [
+    {
+     "label": "Off",
+     "value": ""
+    },
+    {
+     "label": "FXAA",
+     "value": "FXAA"
+    },
+    {
+     "label": "TAA",
+     "value": "TAA"
+    }
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "iMaxAnisotropy",
+   "label": "Anisotropic filtering",
+   "type": "integer",
+   "presets": [
+    "0",
+    "16",
+    "16",
+    "16"
+   ],
+   "choices": [
+    {
+     "label": "Off",
+     "value": "0"
+    },
+    {
+     "label": "2x",
+     "value": "2"
+    },
+    {
+     "label": "4x",
+     "value": "4"
+    },
+    {
+     "label": "8x",
+     "value": "8"
+    },
+    {
+     "label": "16x",
+     "value": "16"
+    }
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "iTexMipMapSkip",
+   "label": "Texture quality",
+   "type": "integer",
+   "presets": [
+    "2",
+    "1",
+    "0",
+    "0"
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "2"
+    },
+    {
+     "label": "Medium",
+     "value": "1"
+    },
+    {
+     "label": "High",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "fShadowDistance",
+   "label": "Shadow distance",
+   "type": "number",
+   "presets": [
+    "3000.0000",
+    "3000.0000",
+    "14000.0000",
+    "20000.0000"
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "fDirShadowDistance",
+   "label": "Directional shadow distance",
+   "type": "number",
+   "presets": [
+    "3000.0000",
+    "3000.0000",
+    "14000.0000",
+    "20000.0000"
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "iShadowMapResolution",
+   "label": "Shadow resolution",
+   "type": "integer",
+   "presets": [
+    "1024",
+    "2048.0",
+    "2048.0",
+    "4096.0"
+   ],
+   "choices": [
+    {
+     "label": "512",
+     "value": "512"
+    },
+    {
+     "label": "1024",
+     "value": "1024"
+    },
+    {
+     "label": "2048",
+     "value": "2048"
+    },
+    {
+     "label": "4096",
+     "value": "4096"
+    }
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "uiShadowFilter",
+   "label": "Shadow filtering",
+   "type": "integer",
+   "presets": [
+    "1",
+    "2",
+    "3",
+    "3"
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "uiOrthoShadowFilter",
+   "label": "Directional shadow filtering",
+   "type": "integer",
+   "presets": [
+    "1",
+    "2",
+    "3",
+    "3"
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "fBlendSplitDirShadow",
+   "label": "Shadow blend distance",
+   "type": "number",
+   "presets": [
+    "0.0000",
+    "48.0000",
+    "48.0000",
+    "48.0000"
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "iMaxFocusShadows",
+   "label": "Focus shadows",
+   "type": "integer",
+   "presets": [
+    "0",
+    "1",
+    "4",
+    "4"
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "iMaxFocusShadowsDialogue",
+   "label": "Dialogue focus shadows",
+   "type": "integer",
+   "presets": [
+    "4",
+    "4",
+    "4",
+    "4"
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "iDirShadowSplits",
+   "label": "Shadow cascades",
+   "type": "integer",
+   "presets": [
+    "2",
+    "2",
+    "3",
+    "3"
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "iMaxDecalsPerFrame",
+   "label": "Decals per frame",
+   "type": "integer",
+   "presets": [
+    "0",
+    "10",
+    "100",
+    "100"
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "iMaxSkinDecalsPerFrame",
+   "label": "Skin decals per frame",
+   "type": "integer",
+   "presets": [
+    "0",
+    "3",
+    "25",
+    "25"
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "bVolumetricLightingEnable",
+   "label": "God rays",
+   "type": "integer",
+   "presets": [
+    "0",
+    "1",
+    "1",
+    "1"
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "iVolumetricLightingQuality",
+   "label": "God ray quality",
+   "type": "integer",
+   "presets": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "choices": [
+    {
+     "label": "Low",
+     "value": "0"
+    },
+    {
+     "label": "Medium",
+     "value": "1"
+    },
+    {
+     "label": "High",
+     "value": "2"
+    },
+    {
+     "label": "Ultra",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "bForceIgnoreSmoothness",
+   "label": "Ignore material smoothness",
+   "type": "integer",
+   "presets": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "bSAOEnable",
+   "label": "Ambient occlusion (SAO)",
+   "type": "integer",
+   "presets": [
+    "1",
+    "1",
+    "1",
+    "1"
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "bEnableWetnessMaterials",
+   "label": "Wetness",
+   "type": "integer",
+   "presets": [
+    "0",
+    "1",
+    "1",
+    "1"
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "bEnableRainOcclusion",
+   "label": "Rain occlusion",
+   "type": "integer",
+   "presets": [
+    "0",
+    "1",
+    "1",
+    "1"
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "fMeshLODLevel1FadeDist",
+   "label": "Mesh LOD distance 1",
+   "type": "number",
+   "presets": [
+    "4000.0000",
+    "4000.0000",
+    "6000.0000",
+    "9999999.0000"
+   ]
+  },
+  {
+   "section": "Display",
+   "key": "fMeshLODLevel2FadeDist",
+   "label": "Mesh LOD distance 2",
+   "type": "number",
+   "presets": [
+    "1600.0000",
+    "3000.0000",
+    "4000.0000",
+    "9999999.0000"
+   ]
+  },
+  {
+   "section": "Decals",
+   "key": "bDecals",
+   "label": "Decals",
+   "type": "integer",
+   "presets": [
+    "0",
+    "1",
+    "1",
+    "1"
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "Decals",
+   "key": "bSkinnedDecals",
+   "label": "Skinned decals",
+   "type": "integer",
+   "presets": [
+    "0",
+    "1",
+    "1",
+    "1"
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "Decals",
+   "key": "uMaxDecals",
+   "label": "Maximum decals",
+   "type": "integer",
+   "presets": [
+    "0",
+    "100",
+    "250",
+    "1000"
+   ]
+  },
+  {
+   "section": "Decals",
+   "key": "uMaxSkinDecals",
+   "label": "Maximum skin decals",
+   "type": "integer",
+   "presets": [
+    "0",
+    "35",
+    "50",
+    "100"
+   ]
+  },
+  {
+   "section": "Decals",
+   "key": "uMaxSkinDecalsPerActor",
+   "label": "Skin decals per actor",
+   "type": "integer",
+   "presets": [
+    "0",
+    "20",
+    "40",
+    "60"
+   ]
+  },
+  {
+   "section": "TerrainManager",
+   "key": "fBlockMaximumDistance",
+   "label": "Maximum terrain distance",
+   "type": "number",
+   "presets": [
+    "100000.0000",
+    "100000.0000",
+    "180000.0000",
+    "250000.0000"
+   ]
+  },
+  {
+   "section": "TerrainManager",
+   "key": "fBlockLevel2Distance",
+   "label": "Terrain LOD distance 2",
+   "type": "number",
+   "presets": [
+    "75000.0000",
+    "80000.0000",
+    "110000.0000",
+    "110000.0000"
+   ]
+  },
+  {
+   "section": "TerrainManager",
+   "key": "fBlockLevel1Distance",
+   "label": "Terrain LOD distance 1",
+   "type": "number",
+   "presets": [
+    "25000.0000",
+    "32000.0000",
+    "60000.0000",
+    "90000.0000"
+   ]
+  },
+  {
+   "section": "TerrainManager",
+   "key": "fBlockLevel0Distance",
+   "label": "Terrain LOD distance 0",
+   "type": "number",
+   "presets": [
+    "15000.0000",
+    "20000.0000",
+    "30000.0000",
+    "60000.0000"
+   ]
+  },
+  {
+   "section": "TerrainManager",
+   "key": "fSplitDistanceMult",
+   "label": "Terrain split multiplier",
+   "type": "number",
+   "presets": [
+    "0.5000",
+    "1.1000",
+    "1.1000",
+    "1.5000"
+   ]
+  },
+  {
+   "section": "TerrainManager",
+   "key": "fTreeLoadDistance",
+   "label": "Tree distance",
+   "type": "number",
+   "presets": [
+    "25000.0000",
+    "75000.0000",
+    "75000.0000",
+    "75000.0000"
+   ]
+  },
+  {
+   "section": "ImageSpace",
+   "key": "bDoDepthOfField",
+   "label": "Depth of field",
+   "type": "integer",
+   "presets": [
+    "0",
+    "1",
+    "1",
+    "1"
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "ImageSpace",
+   "key": "bScreenSpaceBokeh",
+   "label": "Bokeh",
+   "type": "integer",
+   "presets": [
+    "0",
+    "0",
+    "1",
+    "1"
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "ImageSpace",
+   "key": "bMBEnable",
+   "label": "Motion blur",
+   "type": "integer",
+   "presets": [
+    "0",
+    "1",
+    "1",
+    "1"
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "ImageSpace",
+   "key": "bLensFlare",
+   "label": "Lens flare",
+   "type": "integer",
+   "presets": [
+    "0",
+    "1",
+    "1",
+    "1"
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "LightingShader",
+   "key": "bScreenSpaceSubsurfaceScattering",
+   "label": "Subsurface scattering",
+   "type": "integer",
+   "presets": [
+    "0",
+    "0",
+    "1",
+    "1"
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "LightingShader",
+   "key": "bScreenSpaceReflections",
+   "label": "Screen-space reflections",
+   "type": "integer",
+   "presets": [
+    "0",
+    "1",
+    "1",
+    "1"
+   ],
+   "choices": [
+    {
+     "label": "Disabled",
+     "value": "0"
+    },
+    {
+     "label": "Enabled",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "section": "LOD",
+   "key": "fLODFadeOutMultActors",
+   "label": "Actor fade multiplier",
+   "type": "number",
+   "presets": [
+    "5.0000",
+    "5.0000",
+    "9.0000",
+    "15.0000"
+   ]
+  },
+  {
+   "section": "LOD",
+   "key": "fLODFadeOutMultItems",
+   "label": "Item fade multiplier",
+   "type": "number",
+   "presets": [
+    "1.5000",
+    "3.0000",
+    "6.0000",
+    "10.0000"
+   ]
+  },
+  {
+   "section": "LOD",
+   "key": "fLODFadeOutMultObjects",
+   "label": "Object fade multiplier",
+   "type": "number",
+   "presets": [
+    "5.0000",
+    "5.0000",
+    "9.0000",
+    "30.0000"
+   ]
+  },
+  {
+   "section": "LOD",
+   "key": "fLODFadeOutMultSkyCell",
+   "label": "Sky cell fade multiplier",
+   "type": "number",
+   "presets": [
+    "1.0000",
+    "1.0000",
+    "1.0000",
+    "1.0000"
+   ]
+  },
+  {
+   "section": "Grass",
+   "key": "fGrassStartFadeDistance",
+   "label": "Grass distance",
+   "type": "number",
+   "presets": [
+    "1000.0000",
+    "2300.0000",
+    "4000.0000",
+    "7000.0000"
+   ]
+  }
+ ]
+}

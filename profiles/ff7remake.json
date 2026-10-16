@@ -1,0 +1,396 @@
+{
+ "version": 1,
+ "match": {
+  "exe": [
+   "ff7remake_.exe"
+  ]
+ },
+ "machine": "x64",
+ "path": "{drive_c}/users/steamuser/Documents/My Games/FINAL FANTASY VII REMAKE/Saved/Config/WindowsNoEditor/Engine.ini",
+ "format": "ini",
+ "update": "ff7remake",
+ "rows": [
+  {
+   "section": "Autorun",
+   "key": "GraphicsAPI",
+   "label": "Graphics API",
+   "type": "d3d_api",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "DirectX 11",
+     "value": "11"
+    },
+    {
+     "label": "DirectX 12",
+     "value": "12"
+    }
+   ],
+   "help": "DX11 uses DXVK; DX12 uses VKD3D. Applied on launch."
+  },
+  {
+   "section": "SystemSettings",
+   "key": "r.ScreenPercentage",
+   "label": "Render scale",
+   "type": "number",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "25%",
+     "value": "25"
+    },
+    {
+     "label": "33%",
+     "value": "33"
+    },
+    {
+     "label": "50%",
+     "value": "50"
+    },
+    {
+     "label": "67%",
+     "value": "67"
+    },
+    {
+     "label": "75%",
+     "value": "75"
+    },
+    {
+     "label": "100%",
+     "value": "100"
+    }
+   ],
+   "help": "Fixes internal resolution at the selected percentage."
+  },
+  {
+   "section": "SystemSettings",
+   "key": "r.PostProcessAAQuality",
+   "label": "Anti-aliasing",
+   "type": "number",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "Off",
+     "value": "0"
+    },
+    {
+     "label": "Low",
+     "value": "2"
+    },
+    {
+     "label": "Medium",
+     "value": "3"
+    },
+    {
+     "label": "High",
+     "value": "4"
+    },
+    {
+     "label": "Ultra",
+     "value": "6"
+    }
+   ],
+   "help": "Lower quality reduces GPU work; Off leaves jagged edges."
+  },
+  {
+   "section": "SystemSettings",
+   "key": "r.ShadowQuality",
+   "label": "Shadows",
+   "type": "number",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "Off",
+     "value": "0"
+    },
+    {
+     "label": "Low",
+     "value": "1"
+    },
+    {
+     "label": "Medium",
+     "value": "3"
+    },
+    {
+     "label": "High",
+     "value": "5"
+    }
+   ],
+   "help": "Lower quality reduces GPU work. Off can affect indoor lighting."
+  },
+  {
+   "section": "SystemSettings",
+   "key": "r.ViewDistanceScale",
+   "label": "View distance",
+   "type": "number",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "25%",
+     "value": "0.25"
+    },
+    {
+     "label": "50%",
+     "value": "0.5"
+    },
+    {
+     "label": "75%",
+     "value": "0.75"
+    },
+    {
+     "label": "100%",
+     "value": "1"
+    }
+   ],
+   "help": "Distance at which objects remain visible."
+  },
+  {
+   "section": "SystemSettings",
+   "key": "r.SkeletalMeshLODBias",
+   "label": "Character detail",
+   "type": "number",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "Full detail",
+     "value": "0"
+    },
+    {
+     "label": "Reduced",
+     "value": "1"
+    },
+    {
+     "label": "Minimum",
+     "value": "2"
+    }
+   ],
+   "help": "Higher LOD bias reduces character mesh detail."
+  },
+  {
+   "section": "SystemSettings",
+   "key": "r.Streaming.MipBias",
+   "label": "Texture detail",
+   "type": "number",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "Full detail",
+     "value": "0"
+    },
+    {
+     "label": "Reduced",
+     "value": "1"
+    },
+    {
+     "label": "Minimum",
+     "value": "2"
+    }
+   ],
+   "help": "Higher mip bias uses lower-resolution streamed textures."
+  },
+  {
+   "section": "SystemSettings",
+   "key": "r.MaxAnisotropy",
+   "label": "Texture filtering",
+   "type": "number",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "1x",
+     "value": "1"
+    },
+    {
+     "label": "2x",
+     "value": "2"
+    },
+    {
+     "label": "4x",
+     "value": "4"
+    },
+    {
+     "label": "8x",
+     "value": "8"
+    },
+    {
+     "label": "16x",
+     "value": "16"
+    }
+   ],
+   "help": "Sharpness of textures viewed at an angle."
+  },
+  {
+   "section": "SystemSettings",
+   "key": "r.MotionBlurQuality",
+   "label": "Motion blur",
+   "type": "number",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "Off",
+     "value": "0"
+    },
+    {
+     "label": "Low",
+     "value": "2"
+    },
+    {
+     "label": "High",
+     "value": "4"
+    }
+   ],
+   "help": "Blur during camera and object movement."
+  },
+  {
+   "section": "SystemSettings",
+   "key": "r.BloomQuality",
+   "label": "Bloom",
+   "type": "number",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "Off",
+     "value": "0"
+    },
+    {
+     "label": "Low",
+     "value": "1"
+    },
+    {
+     "label": "Medium",
+     "value": "3"
+    },
+    {
+     "label": "High",
+     "value": "5"
+    }
+   ],
+   "help": "Glow around bright areas."
+  },
+  {
+   "section": "SystemSettings",
+   "key": "r.DepthOfFieldQuality",
+   "label": "Depth of field",
+   "type": "number",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "Off",
+     "value": "0"
+    },
+    {
+     "label": "Low",
+     "value": "1"
+    },
+    {
+     "label": "High",
+     "value": "2"
+    }
+   ],
+   "help": "Blur outside the camera's focus range."
+  },
+  {
+   "section": "SystemSettings",
+   "key": "r.AmbientOcclusionLevels",
+   "label": "Ambient occlusion",
+   "type": "number",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "Off",
+     "value": "0"
+    },
+    {
+     "label": "Low",
+     "value": "1"
+    },
+    {
+     "label": "Medium",
+     "value": "2"
+    },
+    {
+     "label": "High",
+     "value": "3"
+    }
+   ],
+   "help": "Contact shadows around objects."
+  },
+  {
+   "section": "SystemSettings",
+   "key": "r.VolumetricFog",
+   "label": "Volumetric fog",
+   "type": "number",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "Off",
+     "value": "0"
+    },
+    {
+     "label": "On",
+     "value": "1"
+    }
+   ],
+   "help": "Volume lighting in fog."
+  },
+  {
+   "section": "SystemSettings",
+   "key": "r.SceneColorFringeQuality",
+   "label": "Chromatic aberration",
+   "type": "number",
+   "choices": [
+    {
+     "label": "Game default",
+     "value": null
+    },
+    {
+     "label": "Off",
+     "value": "0"
+    },
+    {
+     "label": "On",
+     "value": "1"
+    }
+   ],
+   "help": "Colour fringing around screen edges."
+  }
+ ]
+}

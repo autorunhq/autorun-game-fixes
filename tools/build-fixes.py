@@ -55,6 +55,18 @@ fix.json, in each fix's folder:
               of {"section": ..., "key": ..., "initial": ...}. A game Autorun
               already has settings of its own for keeps those instead
 
+A settings profile, profiles/<id>.json, is what Autorun's game settings
+screen shows for a game and what it writes to the game's own settings file
+before the game starts: Autorun's game settings engine's profile as JSON --
+match and machine ("x86" or "x64"), path under {drive_c}/, format, presets,
+rows of section, key, label, type, presets, initial value, choices and help,
+and maybe initial_text, pending_resolution, arguments and an update hook by
+name. Unlike a fix it is not asked about. A game Autorun has a profile built
+in for keeps that one; the profiles here are for the rest, and are what a
+built-in profile becomes once it moves out of Autorun. Autorun's
+tools/export-game-profiles.py writes them from its built-in ones, and its
+tests/game_profiles.c checks a profile comes back from JSON unchanged.
+
 Everything is written to switch/wine/game-fixes/<id>/, and the index to
 switch/wine/game-fixes/index.json with each file's size and SHA-256. The
 index's serial rises with every change, so a card keeps whichever of the
@@ -76,6 +88,7 @@ import sys
 
 repo = Path(__file__).resolve().parents[1]
 fixes = repo / 'fixes'
+profiles_dir = repo / 'profiles'
 out = repo / 'switch/wine/game-fixes'
 index_path = out / 'index.json'
 
@@ -243,6 +256,46 @@ def read_fix(folder):
     return spec, files
 
 
+def read_profiles(old):
+    """profiles/<id>.json, checked enough to fail here rather than be left out on a card."""
+    profiles = []
+    for path in sorted(profiles_dir.glob('*.json')) if profiles_dir.is_dir() else []:
+        name = path.stem
+        if not ID.match(name):
+            fail(name, 'a profile file is named in lowercase letters, digits and dashes')
+        spec = json.loads(path.read_text())
+        known = {'version', 'match', 'machine', 'path', 'format', 'initial_text', 'presets',
+                 'pending_resolution', 'arguments', 'update', 'rows'}
+        if set(spec) - known:
+            fail(name, f'unknown keys {sorted(set(spec) - known)}')
+        if not isinstance(spec.get('version'), int) or spec['version'] < 1:
+            fail(name, 'version is a whole number from 1')
+        if not spec.get('match', {}).get('exe') and not spec.get('match', {}).get('version'):
+            fail(name, 'match names the executable, by exe or version')
+        if spec.get('machine') not in ('x86', 'x64') or spec.get('format', 'ini') not in ('ini', 'xml'):
+            fail(name, 'machine is x86 or x64, format ini or xml')
+        where = spec.get('path', '')
+        if not where.startswith('{drive_c}/') or not relative_ok(where[10:], False) or len(where) >= 256:
+            fail(name, 'path is under {drive_c}/')
+        rows = spec.get('rows', [])
+        if not 0 < len(rows) <= 62:
+            fail(name, 'a profile has 1 to 62 rows')
+        types = {'number', 'integer', 'text', 'resolution', 'd3d_api'}
+        for row in rows:
+            if not row.get('key') or not row.get('label') or row.get('type', 'text') not in types or \
+                    (spec.get('format', 'ini') == 'ini' and not row.get('section')):
+                fail(name, f'row {row.get("key")!r} has a key, a label, a type and, in an INI file, a section')
+        entry = {'id': name, **spec}
+        previous = old.get(name)
+        strip = lambda e: {k: v for k, v in e.items() if k != 'version'}
+        if previous and strip(previous) != strip(entry) and entry['version'] <= previous['version']:
+            fail(name, f'the profile changed; raise its version above {previous["version"]}')
+        if previous and entry['version'] < previous['version']:
+            fail(name, f'version went down from {previous["version"]}')
+        profiles.append(entry)
+    return profiles
+
+
 def registry_text(edits):
     """registry.txt, which common/registry_setup.c reads: view, key, name, type and value by tabs."""
     lines = []
@@ -326,12 +379,16 @@ def main():
         elif path.is_dir() and not any(path.iterdir()):
             path.rmdir()
 
+    profiles = read_profiles({p['id']: p for p in old.get('profiles', [])})
     index = {'schema': 1, 'serial': old.get('serial', 0), 'fixes': entries}
-    if index['fixes'] != old.get('fixes'):
+    if profiles:
+        index['profiles'] = profiles
+    if index['fixes'] != old.get('fixes') or index.get('profiles') != old.get('profiles'):
         index['serial'] += 1
     out.mkdir(parents=True, exist_ok=True)
     index_path.write_text(json.dumps(index, indent=1, ensure_ascii=False) + '\n')
-    print(f'{len(entries)} fixes, serial {index["serial"]}: {index_path.relative_to(repo)}')
+    print(f'{len(entries)} fixes, {len(profiles)} profiles, serial {index["serial"]}: '
+          f'{index_path.relative_to(repo)}')
 
 
 if __name__ == '__main__':
