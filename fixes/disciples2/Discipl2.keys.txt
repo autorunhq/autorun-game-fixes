@@ -1,0 +1,41 @@
+# Disciples II, from Autorun's game fixes. A mouse game: the left stick moves
+# the pointer, A and B are the left and right buttons (B held shows the
+# encyclopedia), the right stick scrolls with the arrows. The game gives most
+# keys a meaning on the map, in a city and in battle:
+#   d-pad up     S  spell (map), buildings (city)
+#   d-pad right  R  research, resurrect (city), retreat (battle)
+#   d-pad down   D  centre on the destination (map), defend (battle)
+#   d-pad left   H  heal (city)
+#   ZL           A  capital (map), auto battle (battle)
+#   L, R         Shift+Tab, Tab  previous, next leader; in battle the other party
+#   X, Y         Enter, Esc
+#   ZR           Q  quick save
+#   left stick click   M      continue the move
+#   right stick click  Space  end the turn, or close a window
+# + and - send nothing: holding both leaves the game, and nothing is saved
+# on the way. Applied over keys.txt; change any line here.
+input-mode=2
+A=0x100
+B=0x101
+X=0x0d
+Y=0x1b
+L=0x10+0x09
+R=0x09
+ZL=0x41
+ZR=0x51
+PLUS=none
+MINUS=none
+STICKL=0x4d
+STICKR=0x20
+UP=0x53
+RIGHT=0x52
+DOWN=0x44
+LEFT=0x48
+LUP=0x109
+LDOWN=0x10a
+LLEFT=0x10b
+LRIGHT=0x10c
+RUP=0x26
+RDOWN=0x28
+RLEFT=0x25
+RRIGHT=0x27

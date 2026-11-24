@@ -1,0 +1,27 @@
+{
+  "title": "Disciples II",
+  "version": 1,
+  "required": true,
+  "summary": "Starts the game in full screen with Wine's renderer: in a window it stops with \"Can't initialize Disciples II\". The picture is then cut or off its pointer; for 4:3 at full height add DisciplesGL to the game's folder yourself - its settings are already made. Controls: left stick pointer, A/B mouse buttons, right stick scrolls; d-pad spell/buildings, research/resurrect/retreat, centre/defend, heal; ZL capital/auto battle; L/R leaders; X Enter, Y Esc; ZR quick save; stick clicks continue a move and end the turn. Keeps your own controls file. Tested with GOG v2.02.",
+  "match": {
+    "exe": ["Discipl2.exe"],
+    "version": { "ProductName": "Disciples II*" }
+  },
+  "install": [
+    { "file": "Discipl2.keys.txt", "to": "{game}/{stem}.keys.txt", "keep": true }
+  ],
+  "settings": {
+    "d3d": "wine"
+  },
+  "game_settings": {
+    "path": "{game}/Disciple.ini",
+    "format": "ini",
+    "initial_text": "[Disciple]\r\n",
+    "rows": [
+      { "section": "Disciple", "key": "DisplayMode", "initial": "0" },
+      { "section": "Wrapper", "key": "ReInit", "initial": "0" },
+      { "section": "Wrapper", "key": "FullScreenMode", "initial": "1" },
+      { "section": "Wrapper", "key": "ImageAspect", "initial": "1" }
+    ]
+  }
+}
