@@ -2,14 +2,15 @@
 
 <!-- Written by tools/build-fixes.py from switch/wine/game-fixes/index.json. Do not edit. -->
 
-What [Autorun](https://github.com/autorunhq/autorun) offers for each game, as published (index serial 5). See the [README](README.md) for how it works and how to add one.
+What [Autorun](https://github.com/autorunhq/autorun) offers for each game, as published (index serial 6). See the [README](README.md) for how it works and how to add one.
 
-## Fixes (4)
+## Fixes (5)
 
 Offered before the game starts. **Required** means the game may not start without its fix.
 
 | Game | Fix | Version | Required | What it does | Recognised by |
 |---|---|---|---|---|---|
+| Disciples II | [`disciples2`](https://github.com/autorunhq/autorun-game-fixes/tree/main/fixes/disciples2) | 1 | Yes | Starts the game in full screen: in a window it wants a 16-bit desktop and stops with "Can't initialize Disciples II". Draws with Wine's renderer. Controls: left stick pointer, A/B mouse buttons (hold B: encyclopedia), right stick scrolls. D-pad up spell or buildings, right research, resurrect or retreat, down centre on destination or defend, left heal; ZL capital or auto battle; L/R leaders, in battle the other party; X Enter, Y Esc; ZR quick save; left stick click continues a move, right stick click ends the turn. Kept if the game has its own controls file. Tested with GOG v2.02. | `Discipl2.exe`; ProductName "Disciples II*" |
 | Guitar Hero III | [`gh3`](https://github.com/autorunhq/autorun-game-fixes/tree/main/fixes/gh3) | 1 | Yes | Writes the registry key Aspyr's installer writes, without which the game stops at startup; sets its screen to 1280x720 with the crowd and the other CPU-heavy details off; and writes a dxvk.conf that keeps textures out of file mappings. For another language, put en, fr, it, de, es or ko in language.txt in the game's folder. | `GH3.exe`; with `AWL.dll` beside it |
 | Halo: Combat Evolved | [`halo`](https://github.com/autorunhq/autorun-game-fixes/tree/main/fixes/halo) | 1 | No | Controls for Halo: the left stick walks with w, a, s and d and the d-pad works the menus with the arrows; X chooses, Y jumps, L is the action key, R reloads, ZL crouches and ZR shows the scores. Kept if the game already has its own controls file. | `halo.exe`; with `Controls` beside it |
 | The Sims 2 Ultimate Collection | [`sims2`](https://github.com/autorunhq/autorun-game-fixes/tree/main/fixes/sims2) | 1 | Yes | Writes what the release's "Instalar Registros" batch file writes, with the card's paths: where each pack is, the language, and the keys the retail executables read. Copies a dxvk.conf that holds the game to 512 MB of video memory, and sets Graphics Rules.sgr for the 1280x720 screen. For another language, put its number in language.txt beside the packs. | `Sims2EP9.exe`; with `../TSData` beside it |
