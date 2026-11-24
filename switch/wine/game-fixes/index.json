@@ -7,7 +7,7 @@
    "title": "Disciples II",
    "version": 1,
    "required": true,
-   "summary": "Starts the game in full screen: in a window it wants a 16-bit desktop and stops with \"Can't initialize Disciples II\". Draws with Wine's renderer. Controls: left stick pointer, A/B mouse buttons (hold B: encyclopedia), right stick scrolls. D-pad up spell or buildings, right research, resurrect or retreat, down centre on destination or defend, left heal; ZL capital or auto battle; L/R leaders, in battle the other party; X Enter, Y Esc; ZR quick save; left stick click continues a move, right stick click ends the turn. Kept if the game has its own controls file. Tested with GOG v2.02.",
+   "summary": "Starts the game in full screen with Wine's renderer: in a window it stops with \"Can't initialize Disciples II\". The picture is then cut or off its pointer; for 4:3 at full height add DisciplesGL to the game's folder yourself - its settings are already made. Controls: left stick pointer, A/B mouse buttons, right stick scrolls; d-pad spell/buildings, research/resurrect/retreat, centre/defend, heal; ZL capital/auto battle; L/R leaders; X Enter, Y Esc; ZR quick save; stick clicks continue a move and end the turn. Keeps your own controls file. Tested with GOG v2.02.",
    "match": {
     "exe": [
      "Discipl2.exe"
@@ -41,6 +41,21 @@
       "section": "Disciple",
       "key": "DisplayMode",
       "initial": "0"
+     },
+     {
+      "section": "Wrapper",
+      "key": "ReInit",
+      "initial": "0"
+     },
+     {
+      "section": "Wrapper",
+      "key": "FullScreenMode",
+      "initial": "1"
+     },
+     {
+      "section": "Wrapper",
+      "key": "ImageAspect",
+      "initial": "1"
      }
     ],
     "initial_text": "[Disciple]\r\n"
